@@ -1,0 +1,247 @@
+{
+ "tau": 0.02824497964528043,
+ "pair": [
+  0,
+  1
+ ],
+ "other_registers": [
+  2,
+  3
+ ],
+ "layout": {
+  "reg": [
+   [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ],
+   [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+   ]
+  ],
+  "ctrl": 24,
+  "zs": 25,
+  "zt": 26,
+  "zu": 27,
+  "zv": 28,
+  "cond": 29,
+  "nq": 30
+ },
+ "cx_whole_transpile": 61604,
+ "cx_sections": [
+  84,
+  61436,
+  84
+ ],
+ "parts_separately_transpiled": {
+  "flags z_u, z_v": 168,
+  "condition flags": 136,
+  "n0: compression": 336,
+  "n0: eigenbasis W^T": 29655,
+  "n0: controlled diagonal": 510,
+  "n0: eigenbasis W": 29655,
+  "flags z_s, z_t": 168,
+  "n2: phase": 6,
+  "n1: controlled content swap": 64,
+  "n1: eigenbasis W5^T": 423,
+  "n1: controlled diagonal": 62,
+  "n1: eigenbasis W5": 423
+ },
+ "build_section_checks": {
+  "flag_sections": {
+   "pre": {
+    "qubits_touched": [
+     0,
+     1,
+     2,
+     3,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     27,
+     28
+    ],
+    "borrowed_dirty_qubits": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "cx": 84,
+    "max_dev_all_4096_codes": 1.7860880045179793e-15,
+    "seconds": 205.09751772880554
+   },
+   "post": {
+    "qubits_touched": [
+     0,
+     1,
+     2,
+     3,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     27,
+     28
+    ],
+    "borrowed_dirty_qubits": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "cx": 84,
+    "max_dev_all_4096_codes": 2.319542604187339e-15,
+    "seconds": 198.0710678100586
+   }
+  },
+  "class_checks": [
+   {
+    "cls": "n = 0: u, v HF",
+    "u_code": 0,
+    "v_code": 0,
+    "n_states": 205,
+    "dev": 3.061668258583207e-12,
+    "weight_outside": 7.484568520510493e-13
+   },
+   {
+    "cls": "n = 0: u, v HF",
+    "u_code": 0,
+    "v_code": 0,
+    "n_states": 205,
+    "dev": 3.130161978480949e-12,
+    "weight_outside": 7.486233855047431e-13
+   },
+   {
+    "cls": "n = 1: u single",
+    "u_code": 13,
+    "v_code": 0,
+    "n_states": 25,
+    "dev": 5.973911738017851e-12,
+    "weight_outside": 7.480682739924305e-13
+   },
+   {
+    "cls": "n = 1: u single",
+    "u_code": 6,
+    "v_code": 0,
+    "n_states": 25,
+    "dev": 5.798816933718823e-12,
+    "weight_outside": 7.485123632022805e-13
+   },
+   {
+    "cls": "n = 1: v single",
+    "u_code": 0,
+    "v_code": 9,
+    "n_states": 25,
+    "dev": 5.800227145821168e-12,
+    "weight_outside": 7.457368056407176e-13
+   },
+   {
+    "cls": "n = 1: v single",
+    "u_code": 0,
+    "v_code": 3,
+    "n_states": 25,
+    "dev": 5.4985379850990874e-12,
+    "weight_outside": 7.468470286653428e-13
+   },
+   {
+    "cls": "n = 2: u, v singles",
+    "u_code": 15,
+    "v_code": 11,
+    "n_states": 1,
+    "dev": 1.723478322815214e-11,
+    "weight_outside": 7.490674747145931e-13
+   },
+   {
+    "cls": "n = 2: u, v singles",
+    "u_code": 1,
+    "v_code": 13,
+    "n_states": 1,
+    "dev": 1.6290558316234914e-11,
+    "weight_outside": 7.492340081682869e-13
+   },
+   {
+    "cls": "n = 2: u rank 2",
+    "u_code": 52,
+    "v_code": 0,
+    "n_states": 1,
+    "dev": 1.811885323183527e-11,
+    "weight_outside": 7.500111642855245e-13
+   },
+   {
+    "cls": "n = 2: u rank 2",
+    "u_code": 37,
+    "v_code": 0,
+    "n_states": 1,
+    "dev": 1.680880398979225e-11,
+    "weight_outside": 7.496225862269057e-13
+   },
+   {
+    "cls": "n = 2: v rank 2",
+    "u_code": 0,
+    "v_code": 49,
+    "n_states": 1,
+    "dev": 1.9481230058715014e-11,
+    "weight_outside": 7.491784970170556e-13
+   },
+   {
+    "cls": "n = 2: v rank 2",
+    "u_code": 0,
+    "v_code": 34,
+    "n_states": 1,
+    "dev": 1.817349683253564e-11,
+    "weight_outside": 7.485678743535118e-13
+   }
+  ],
+  "max_dev": 1.9481230058715014e-11,
+  "mid_cx": 61436,
+  "cx_sections": [
+   84,
+   61436,
+   84
+  ]
+ },
+ "verification_mode": "verified by the build in sections (a 30-qubit statevector is 16 GB): pre and post on all 64 x 64 codes of registers 2, 3 with a random state on the borrowed qubits 0-3; mid (reads registers 2, 3 only through bit 5, qubits 17 and 23) remapped to 20 qubits, per class of (u, v) basis states against exp(-i tau Pi_n A Pi_n) (n = 0: 205, n = 1: 25, n = 2: 1 state), two representatives per class; with registers 2, 3 in a basis state the state factorizes between the sections",
+ "source": "o16/build/b2_pair_piece.py, results_b2_01.json"
+}

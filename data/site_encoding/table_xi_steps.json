@@ -1,0 +1,86 @@
+{
+ "note": "ideal overlaps C(n) = <ref|U^n|ref> of the product-formula steps (dt = 0.01 MeV^-1), ref = all nucleons on site (0,0,0), computed in the fixed-particle-number sector, independently of the circuits",
+ "source": "export/add_readouts.py: paper_v9/figure_replication/krylov_circuit.py LatticeModel, krylov_data; paper_v9/circuits/s4_reference.step_unitary",
+ "steps": {
+  "deuteron_CS1_dt0.01_n1": {
+   "system": "deuteron",
+   "method": "S1",
+   "n": 1,
+   "dt": 0.01,
+   "C": [
+    0.8592420382865619,
+    -0.44634826844330966
+   ]
+  },
+  "deuteron_CS2_dt0.01_n1": {
+   "system": "deuteron",
+   "method": "S2",
+   "n": 1,
+   "dt": 0.01,
+   "C": [
+    0.860417475844154,
+    -0.4444325860940753
+   ]
+  },
+  "deuteron_CS4_dt0.01_n1": {
+   "system": "deuteron",
+   "method": "S4",
+   "n": 1,
+   "dt": 0.01,
+   "C": [
+    0.8599772912492948,
+    -0.445047348616786
+   ]
+  },
+  "deuteron_CS2_dt0.01_n3_merged": {
+   "system": "deuteron",
+   "method": "S2",
+   "n": 3,
+   "dt": 0.01,
+   "C": [
+    0.13478116243950763,
+    -0.7376886004384301
+   ]
+  },
+  "triton_CS1_dt0.01_n1": {
+   "system": "triton",
+   "method": "S1",
+   "n": 1,
+   "dt": 0.01,
+   "C": [
+    0.8999594230079903,
+    -0.3127904534314241
+   ]
+  },
+  "triton_CS2_dt0.01_n1": {
+   "system": "triton",
+   "method": "S2",
+   "n": 1,
+   "dt": 0.01,
+   "C": [
+    0.9055682247671075,
+    -0.3038779570842359
+   ]
+  },
+  "triton_CS4_dt0.01_n1": {
+   "system": "triton",
+   "method": "S4",
+   "n": 1,
+   "dt": 0.01,
+   "C": [
+    0.9029917764465486,
+    -0.3064508422677558
+   ]
+  },
+  "triton_CS2_dt0.01_n3_merged": {
+   "system": "triton",
+   "method": "S2",
+   "n": 3,
+   "dt": 0.01,
+   "C": [
+    0.4862197653936581,
+    -0.5116365234441868
+   ]
+  }
+ }
+}

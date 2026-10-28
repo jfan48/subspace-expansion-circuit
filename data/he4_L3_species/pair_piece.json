@@ -1,0 +1,185 @@
+{
+ "tau": 0.0075,
+ "pair": [
+  0,
+  1
+ ],
+ "other_registers": [
+  2,
+  3
+ ],
+ "layout": {
+  "reg": [
+   [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ],
+   [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+   ]
+  ],
+  "ctrl": 24,
+  "canon": [
+   25,
+   26,
+   27,
+   28,
+   29
+  ],
+  "zs": 30,
+  "zt": 31,
+  "zu": 32,
+  "zv": 33,
+  "cond": 34,
+  "nq": 35
+ },
+ "cx_whole_transpile": 5436,
+ "cx_sections": [
+  84,
+  5268,
+  84
+ ],
+ "parts_separately_transpiled": {
+  "flags z_u, z_v (compute, uncompute)": 168,
+  "condition flags": 72,
+  "n0: adder": 168,
+  "n0: canonicalization": 322,
+  "n0: compression": 96,
+  "n0: mux W^T": 1936,
+  "n0: controlled diagonal": 254,
+  "n0: mux W": 1936,
+  "flags z_s, z_t (compute, uncompute)": 168,
+  "n2: phase": 6,
+  "n1: controlled register swap": 96,
+  "n1: compression": 96,
+  "n1: UCRX": 64,
+  "n1: phase diagonal": 62
+ },
+ "build_section_checks": {
+  "flag_sections": {
+   "pre": {
+    "qubits_touched": [
+     0,
+     1,
+     2,
+     3,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     32,
+     33
+    ],
+    "borrowed_dirty_qubits": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "cx": 84,
+    "max_dev_all_4096_codes": 1.9984014443252818e-15
+   },
+   "post": {
+    "qubits_touched": [
+     0,
+     1,
+     2,
+     3,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     32,
+     33
+    ],
+    "borrowed_dirty_qubits": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "cx": 84,
+    "max_dev_all_4096_codes": 2.319542604187339e-15
+   }
+  },
+  "class_checks": [
+   {
+    "cls": "none excited (n = 0)",
+    "z_u": 0,
+    "z_v": 0,
+    "n_states": 729,
+    "dev": 4.076759800810424e-13,
+    "weight_outside": 5.1181281435219717e-14
+   },
+   {
+    "cls": "one excited (n = 1)",
+    "z_u": 1,
+    "z_v": 0,
+    "n_states": 53,
+    "dev": 3.6708604917884254e-13,
+    "weight_outside": 5.240252676230739e-14
+   },
+   {
+    "cls": "one excited (n = 1)",
+    "z_u": 0,
+    "z_v": 1,
+    "n_states": 53,
+    "dev": 3.9451674629976905e-13,
+    "weight_outside": 5.162537064506978e-14
+   },
+   {
+    "cls": "both excited (n = 2)",
+    "z_u": 1,
+    "z_v": 1,
+    "n_states": 1,
+    "dev": 8.698103203580868e-13,
+    "weight_outside": 4.973799150320701e-14
+   }
+  ],
+  "max_dev": 8.698103203580868e-13,
+  "mid_cx": 5268
+ },
+ "verification_mode": "verified by the build in sections (the 35-qubit statevector is out of reach): pre and post on all 64 x 64 codes of registers 2, 3 with a random state on the borrowed qubits 0-3; mid (touches no qubit of registers 2, 3) remapped to 23 qubits, per class none / one / both of registers 2, 3 excited against exp(-i tau Pi_n A Pi_n); with registers 2, 3 in a basis state the state factorizes between the sections",
+ "source": "he4_L3/build/b6_pair_piece.py, results_b6.json"
+}

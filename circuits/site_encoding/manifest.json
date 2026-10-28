@@ -1,0 +1,4491 @@
+[
+ {
+  "file": "circuits/site_encoding/unit_hop_s0.qasm",
+  "description": "controlled hop unit C_a-exp(+i theta (X_i Zbar X_j + Y_i Zbar Y_j)), i = 0, j = s + 1, string qubits 1..s, control a = s + 2",
+  "family": "Table XI unit",
+  "qubits": 3,
+  "cx": 5,
+  "paper_cx": 5,
+  "paper": "Table XI, controlled hop unit (string length s = 0)",
+  "depth": 13,
+  "bytes": 285,
+  "dt": null,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list; OpenQASM 2 loses nothing)",
+  "source": "paper_v9/circuits/export_qasm.py (identical copies of paper_v9/circuits/qasm/)",
+  "readout": {
+   "type": "unit_operator",
+   "kind": "controlled_hop",
+   "nq": 3,
+   "i": 0,
+   "j": 1,
+   "a": 2,
+   "theta": 0.0518,
+   "note": "exp(+i theta (X_i Zbar X_j + Y_i Zbar Y_j)) on qubits 0..s+1 (Zbar = Z on the qubits strictly between i and j), controlled by qubit a; theta = kappa dt, kappa = 5.18 MeV, dt = 0.01"
+  }
+ },
+ {
+  "file": "circuits/site_encoding/unit_hop_s1.qasm",
+  "description": "controlled hop unit C_a-exp(+i theta (X_i Zbar X_j + Y_i Zbar Y_j)), i = 0, j = s + 1, string qubits 1..s, control a = s + 2",
+  "family": "Table XI unit",
+  "qubits": 4,
+  "cx": 7,
+  "paper_cx": 7,
+  "paper": "Table XI, controlled hop unit (string length s = 1)",
+  "depth": 15,
+  "bytes": 313,
+  "dt": null,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list; OpenQASM 2 loses nothing)",
+  "source": "paper_v9/circuits/export_qasm.py (identical copies of paper_v9/circuits/qasm/)",
+  "readout": {
+   "type": "unit_operator",
+   "kind": "controlled_hop",
+   "nq": 4,
+   "i": 0,
+   "j": 2,
+   "a": 3,
+   "theta": 0.0518,
+   "note": "exp(+i theta (X_i Zbar X_j + Y_i Zbar Y_j)) on qubits 0..s+1 (Zbar = Z on the qubits strictly between i and j), controlled by qubit a; theta = kappa dt, kappa = 5.18 MeV, dt = 0.01"
+  }
+ },
+ {
+  "file": "circuits/site_encoding/unit_hop_s3.qasm",
+  "description": "controlled hop unit C_a-exp(+i theta (X_i Zbar X_j + Y_i Zbar Y_j)), i = 0, j = s + 1, string qubits 1..s, control a = s + 2",
+  "family": "Table XI unit",
+  "qubits": 6,
+  "cx": 11,
+  "paper_cx": 11,
+  "paper": "Table XI, controlled hop unit (string length s = 3)",
+  "depth": 19,
+  "bytes": 369,
+  "dt": null,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list; OpenQASM 2 loses nothing)",
+  "source": "paper_v9/circuits/export_qasm.py (identical copies of paper_v9/circuits/qasm/)",
+  "readout": {
+   "type": "unit_operator",
+   "kind": "controlled_hop",
+   "nq": 6,
+   "i": 0,
+   "j": 4,
+   "a": 5,
+   "theta": 0.0518,
+   "note": "exp(+i theta (X_i Zbar X_j + Y_i Zbar Y_j)) on qubits 0..s+1 (Zbar = Z on the qubits strictly between i and j), controlled by qubit a; theta = kappa dt, kappa = 5.18 MeV, dt = 0.01"
+  }
+ },
+ {
+  "file": "circuits/site_encoding/unit_site_diagonal_2orb.qasm",
+  "description": "controlled site-diagonal phase polynomial of one site, 2 orbitals on qubits 0..1, control 2",
+  "family": "Table XI unit",
+  "qubits": 3,
+  "cx": 6,
+  "paper_cx": 6,
+  "paper": "Table XI, controlled site-diagonal unit (2 orbitals)",
+  "depth": 11,
+  "bytes": 316,
+  "dt": 0.01,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list; OpenQASM 2 loses nothing)",
+  "source": "paper_v9/circuits/export_qasm.py (identical copies of paper_v9/circuits/qasm/)",
+  "readout": {
+   "type": "unit_operator",
+   "kind": "controlled_site_diagonal",
+   "nq": 3,
+   "site_qubits": [
+    0,
+    1
+   ],
+   "a": 2,
+   "dt": 0.01,
+   "coefficients": [
+    [
+     [
+      0
+     ],
+     -11.9775
+    ],
+    [
+     [
+      1
+     ],
+     -11.9775
+    ],
+    [
+     [
+      0,
+      1
+     ],
+     -3.5625
+    ]
+   ],
+   "identity_coefficient": 27.5175,
+   "note": "exp(-i dt sum_S c_S Z_S) on the site qubits (identity term excluded: the full circuits collect it in one phase gate on the ancilla), controlled by qubit a"
+  }
+ },
+ {
+  "file": "circuits/site_encoding/unit_site_diagonal_3orb.qasm",
+  "description": "controlled site-diagonal phase polynomial of one site, 3 orbitals on qubits 0..2, control 3",
+  "family": "Table XI unit",
+  "qubits": 4,
+  "cx": 14,
+  "paper_cx": 14,
+  "paper": "Table XI, controlled site-diagonal unit (3 orbitals)",
+  "depth": 26,
+  "bytes": 684,
+  "dt": 0.01,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list; OpenQASM 2 loses nothing)",
+  "source": "paper_v9/circuits/export_qasm.py (identical copies of paper_v9/circuits/qasm/)",
+  "readout": {
+   "type": "unit_operator",
+   "kind": "controlled_site_diagonal",
+   "nq": 4,
+   "site_qubits": [
+    0,
+    1,
+    2
+   ],
+   "a": 3,
+   "dt": 0.01,
+   "coefficients": [
+    [
+     [
+      0
+     ],
+     -6.284999999999999
+    ],
+    [
+     [
+      1
+     ],
+     -6.284999999999999
+    ],
+    [
+     [
+      2
+     ],
+     -6.284999999999999
+    ],
+    [
+     [
+      0,
+      1
+     ],
+     -5.6925
+    ],
+    [
+     [
+      0,
+      2
+     ],
+     -5.6925
+    ],
+    [
+     [
+      1,
+      2
+     ],
+     -5.6925
+    ],
+    [
+     [
+      0,
+      1,
+      2
+     ],
+     2.13
+    ]
+   ],
+   "identity_coefficient": 33.802499999999995,
+   "note": "exp(-i dt sum_S c_S Z_S) on the site qubits (identity term excluded: the full circuits collect it in one phase gate on the ancilla), controlled by qubit a"
+  }
+ },
+ {
+  "file": "circuits/site_encoding/deuteron_CS1_dt0.01_n1.qasm",
+  "description": "controlled first-order step S1, dt = 0.01 MeV^-1, n = 1",
+  "family": "Table XI step",
+  "qubits": 17,
+  "cx": 220,
+  "paper_cx": 220,
+  "paper": "Table XI, deuteron C-S1",
+  "depth": 298,
+  "bytes": 8962,
+  "dt": 0.01,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list; OpenQASM 2 loses nothing)",
+  "source": "paper_v9/circuits/export_qasm.py (identical copies of paper_v9/circuits/qasm/)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "prep": {
+    "x": [
+     0,
+     8
+    ],
+    "h": [
+     16
+    ]
+   },
+   "reference": {
+    "file": "data/site_encoding/table_xi_steps.json",
+    "path": [
+     "steps",
+     "deuteron_CS1_dt0.01_n1",
+     "C"
+    ]
+   },
+   "note": "the file holds the controlled step only: prepend x on the reference qubits and h on the ancilla; C(n) = 2 conj(A0) A1 = <ref|U^n|ref>"
+  }
+ },
+ {
+  "file": "circuits/site_encoding/deuteron_CS2_dt0.01_n1.qasm",
+  "description": "controlled second-order step S2, dt = 0.01 MeV^-1, n = 1",
+  "family": "Table XI step",
+  "qubits": 17,
+  "cx": 392,
+  "paper_cx": 392,
+  "paper": "Table XI, deuteron C-S2",
+  "depth": 515,
+  "bytes": 15625,
+  "dt": 0.01,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list; OpenQASM 2 loses nothing)",
+  "source": "paper_v9/circuits/export_qasm.py (identical copies of paper_v9/circuits/qasm/)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "prep": {
+    "x": [
+     0,
+     8
+    ],
+    "h": [
+     16
+    ]
+   },
+   "reference": {
+    "file": "data/site_encoding/table_xi_steps.json",
+    "path": [
+     "steps",
+     "deuteron_CS2_dt0.01_n1",
+     "C"
+    ]
+   },
+   "note": "the file holds the controlled step only: prepend x on the reference qubits and h on the ancilla; C(n) = 2 conj(A0) A1 = <ref|U^n|ref>"
+  }
+ },
+ {
+  "file": "circuits/site_encoding/deuteron_CS4_dt0.01_n1.qasm",
+  "description": "controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 1",
+  "family": "Table XI step",
+  "qubits": 17,
+  "cx": 1272,
+  "paper_cx": 1272,
+  "paper": "Table XI, deuteron C-S4",
+  "depth": 1683,
+  "bytes": 51185,
+  "dt": 0.01,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list; OpenQASM 2 loses nothing)",
+  "source": "paper_v9/circuits/export_qasm.py (identical copies of paper_v9/circuits/qasm/)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "prep": {
+    "x": [
+     0,
+     8
+    ],
+    "h": [
+     16
+    ]
+   },
+   "reference": {
+    "file": "data/site_encoding/table_xi_steps.json",
+    "path": [
+     "steps",
+     "deuteron_CS4_dt0.01_n1",
+     "C"
+    ]
+   },
+   "note": "the file holds the controlled step only: prepend x on the reference qubits and h on the ancilla; C(n) = 2 conj(A0) A1 = <ref|U^n|ref>"
+  }
+ },
+ {
+  "file": "circuits/site_encoding/deuteron_CS2_dt0.01_n3_merged.qasm",
+  "description": "controlled second-order step S2, dt = 0.01 MeV^-1, n = 3 merged consecutive steps",
+  "family": "Table XI step",
+  "qubits": 17,
+  "cx": 832,
+  "paper_cx": 832,
+  "paper": "Table XI, deuteron C-S2 x 3 merged",
+  "depth": 1099,
+  "bytes": 33427,
+  "dt": 0.01,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list; OpenQASM 2 loses nothing)",
+  "source": "paper_v9/circuits/export_qasm.py (identical copies of paper_v9/circuits/qasm/)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "prep": {
+    "x": [
+     0,
+     8
+    ],
+    "h": [
+     16
+    ]
+   },
+   "reference": {
+    "file": "data/site_encoding/table_xi_steps.json",
+    "path": [
+     "steps",
+     "deuteron_CS2_dt0.01_n3_merged",
+     "C"
+    ]
+   },
+   "note": "the file holds the controlled step only: prepend x on the reference qubits and h on the ancilla; C(n) = 2 conj(A0) A1 = <ref|U^n|ref>"
+  }
+ },
+ {
+  "file": "circuits/site_encoding/triton_CS1_dt0.01_n1.qasm",
+  "description": "controlled first-order step S1, dt = 0.01 MeV^-1, n = 1",
+  "family": "Table XI step",
+  "qubits": 25,
+  "cx": 370,
+  "paper_cx": 370,
+  "paper": "Table XI, triton C-S1",
+  "depth": 524,
+  "bytes": 15590,
+  "dt": 0.01,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list; OpenQASM 2 loses nothing)",
+  "source": "paper_v9/circuits/export_qasm.py (identical copies of paper_v9/circuits/qasm/)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "prep": {
+    "x": [
+     0,
+     8,
+     16
+    ],
+    "h": [
+     24
+    ]
+   },
+   "reference": {
+    "file": "data/site_encoding/table_xi_steps.json",
+    "path": [
+     "steps",
+     "triton_CS1_dt0.01_n1",
+     "C"
+    ]
+   },
+   "note": "the file holds the controlled step only: prepend x on the reference qubits and h on the ancilla; C(n) = 2 conj(A0) A1 = <ref|U^n|ref>"
+  }
+ },
+ {
+  "file": "circuits/site_encoding/triton_CS2_dt0.01_n1.qasm",
+  "description": "controlled second-order step S2, dt = 0.01 MeV^-1, n = 1",
+  "family": "Table XI step",
+  "qubits": 25,
+  "cx": 628,
+  "paper_cx": 628,
+  "paper": "Table XI, triton C-S2",
+  "depth": 847,
+  "bytes": 25753,
+  "dt": 0.01,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list; OpenQASM 2 loses nothing)",
+  "source": "paper_v9/circuits/export_qasm.py (identical copies of paper_v9/circuits/qasm/)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "prep": {
+    "x": [
+     0,
+     8,
+     16
+    ],
+    "h": [
+     24
+    ]
+   },
+   "reference": {
+    "file": "data/site_encoding/table_xi_steps.json",
+    "path": [
+     "steps",
+     "triton_CS2_dt0.01_n1",
+     "C"
+    ]
+   },
+   "note": "the file holds the controlled step only: prepend x on the reference qubits and h on the ancilla; C(n) = 2 conj(A0) A1 = <ref|U^n|ref>"
+  }
+ },
+ {
+  "file": "circuits/site_encoding/triton_CS4_dt0.01_n1.qasm",
+  "description": "controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 1",
+  "family": "Table XI step",
+  "qubits": 25,
+  "cx": 2108,
+  "paper_cx": 2108,
+  "paper": "Table XI, triton C-S4",
+  "depth": 2919,
+  "bytes": 87557,
+  "dt": 0.01,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list; OpenQASM 2 loses nothing)",
+  "source": "paper_v9/circuits/export_qasm.py (identical copies of paper_v9/circuits/qasm/)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "prep": {
+    "x": [
+     0,
+     8,
+     16
+    ],
+    "h": [
+     24
+    ]
+   },
+   "reference": {
+    "file": "data/site_encoding/table_xi_steps.json",
+    "path": [
+     "steps",
+     "triton_CS4_dt0.01_n1",
+     "C"
+    ]
+   },
+   "note": "the file holds the controlled step only: prepend x on the reference qubits and h on the ancilla; C(n) = 2 conj(A0) A1 = <ref|U^n|ref>"
+  }
+ },
+ {
+  "file": "circuits/site_encoding/triton_CS2_dt0.01_n3_merged.qasm",
+  "description": "controlled second-order step S2, dt = 0.01 MeV^-1, n = 3 merged consecutive steps",
+  "family": "Table XI step",
+  "qubits": 25,
+  "cx": 1368,
+  "paper_cx": 1368,
+  "paper": "Table XI, triton C-S2 x 3 merged",
+  "depth": 1883,
+  "bytes": 56775,
+  "dt": 0.01,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list; OpenQASM 2 loses nothing)",
+  "source": "paper_v9/circuits/export_qasm.py (identical copies of paper_v9/circuits/qasm/)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "prep": {
+    "x": [
+     0,
+     8,
+     16
+    ],
+    "h": [
+     24
+    ]
+   },
+   "reference": {
+    "file": "data/site_encoding/table_xi_steps.json",
+    "path": [
+     "steps",
+     "triton_CS2_dt0.01_n3_merged",
+     "C"
+    ]
+   },
+   "note": "the file holds the controlled step only: prepend x on the reference qubits and h on the ancilla; C(n) = 2 conj(A0) A1 = <ref|U^n|ref>"
+  }
+ },
+ {
+  "file": "circuits/site_encoding/deuteron_controlled_walk.qasm",
+  "description": "controlled qubitized walk of the 72-string LCU of the deuteron: control qubit 0, selection register 1-7, scratch register 8-14, system 15-30 (system qubit q on 15 + q)",
+  "family": "Table XI walk",
+  "qubits": 31,
+  "cx": 549,
+  "paper_cx": 549,
+  "paper": "Table XI, deuteron controlled walk (LCU of 72 Pauli strings)",
+  "depth": 920,
+  "bytes": 25668,
+  "dt": 0.01,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list; OpenQASM 2 loses nothing)",
+  "source": "paper_v9/circuits/export_qasm.py (identical copies of paper_v9/circuits/qasm/)",
+  "readout": {
+   "type": "none",
+   "reason": "31 qubits (statevector 32 GB); its parts and small instances were verified by paper_v9/circuits/verify_walk.py"
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n01.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 1 (T = 0.01 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 1,
+  "T": 0.01,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 1272,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 51536,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     0
+    ],
+    "im_path": [
+     "C_im",
+     0
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n02.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 2 (T = 0.02 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 2,
+  "T": 0.02,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 2372,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 96075,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     1
+    ],
+    "im_path": [
+     "C_im",
+     1
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n03.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 3 (T = 0.03 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 3,
+  "T": 0.03,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 3472,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 140614,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     2
+    ],
+    "im_path": [
+     "C_im",
+     2
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n04.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 4 (T = 0.04 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 4,
+  "T": 0.04,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 4572,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 185153,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     3
+    ],
+    "im_path": [
+     "C_im",
+     3
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n05.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 5 (T = 0.05 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 5,
+  "T": 0.05,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 5672,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 229680,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     4
+    ],
+    "im_path": [
+     "C_im",
+     4
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n06.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 6 (T = 0.06 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 6,
+  "T": 0.06,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 6772,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 274231,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     5
+    ],
+    "im_path": [
+     "C_im",
+     5
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n07.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 7 (T = 0.07 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 7,
+  "T": 0.07,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 7872,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 318770,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     6
+    ],
+    "im_path": [
+     "C_im",
+     6
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n08.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 8 (T = 0.08 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 8,
+  "T": 0.08,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 8972,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 363309,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     7
+    ],
+    "im_path": [
+     "C_im",
+     7
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n09.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 9 (T = 0.09 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 9,
+  "T": 0.09,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 10072,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 407837,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     8
+    ],
+    "im_path": [
+     "C_im",
+     8
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n10.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 10 (T = 0.1 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 10,
+  "T": 0.1,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 11172,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 452388,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     9
+    ],
+    "im_path": [
+     "C_im",
+     9
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n11.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 11 (T = 0.11 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 11,
+  "T": 0.11,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 12272,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 496927,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     10
+    ],
+    "im_path": [
+     "C_im",
+     10
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n12.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 12 (T = 0.12 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 12,
+  "T": 0.12,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 13372,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 541466,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     11
+    ],
+    "im_path": [
+     "C_im",
+     11
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n13.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 13 (T = 0.13 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 13,
+  "T": 0.13,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 14472,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 586005,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     12
+    ],
+    "im_path": [
+     "C_im",
+     12
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n14.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 14 (T = 0.14 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 14,
+  "T": 0.14,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 15572,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 630544,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     13
+    ],
+    "im_path": [
+     "C_im",
+     13
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n15.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 15 (T = 0.15 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 15,
+  "T": 0.15,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 16672,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 675083,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     14
+    ],
+    "im_path": [
+     "C_im",
+     14
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n16.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 16 (T = 0.16 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 16,
+  "T": 0.16,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 17772,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 719622,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     15
+    ],
+    "im_path": [
+     "C_im",
+     15
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n17.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 17 (T = 0.17 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 17,
+  "T": 0.17,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 18872,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 764150,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     16
+    ],
+    "im_path": [
+     "C_im",
+     16
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n18.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 18 (T = 0.18 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 18,
+  "T": 0.18,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 19972,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 808689,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     17
+    ],
+    "im_path": [
+     "C_im",
+     17
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n19.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 19 (T = 0.19 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 19,
+  "T": 0.19,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 21072,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 853239,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     18
+    ],
+    "im_path": [
+     "C_im",
+     18
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n20.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 20 (T = 0.2 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 20,
+  "T": 0.2,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 22172,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 897778,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     19
+    ],
+    "im_path": [
+     "C_im",
+     19
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n21.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 21 (T = 0.21 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 21,
+  "T": 0.21,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 23272,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 942317,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     20
+    ],
+    "im_path": [
+     "C_im",
+     20
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n22.qasm",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 22 (T = 0.22 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 22,
+  "T": 0.22,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 24372,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 986856,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     21
+    ],
+    "im_path": [
+     "C_im",
+     21
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n23.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 23 (T = 0.23 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 23,
+  "T": 0.23,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 25472,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 20055,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     22
+    ],
+    "im_path": [
+     "C_im",
+     22
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n24.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 24 (T = 0.24 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 24,
+  "T": 0.24,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 26572,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 20835,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     23
+    ],
+    "im_path": [
+     "C_im",
+     23
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n25.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 25 (T = 0.25 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 25,
+  "T": 0.25,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 27672,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 21615,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     24
+    ],
+    "im_path": [
+     "C_im",
+     24
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n26.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 26 (T = 0.26 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 26,
+  "T": 0.26,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 28772,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 22394,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     25
+    ],
+    "im_path": [
+     "C_im",
+     25
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n27.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 27 (T = 0.27 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 27,
+  "T": 0.27,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 29872,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 23174,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     26
+    ],
+    "im_path": [
+     "C_im",
+     26
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n28.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 28 (T = 0.28 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 28,
+  "T": 0.28,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 30972,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 23955,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     27
+    ],
+    "im_path": [
+     "C_im",
+     27
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n29.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 29 (T = 0.29 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 29,
+  "T": 0.29,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 32072,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 24735,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     28
+    ],
+    "im_path": [
+     "C_im",
+     28
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n30.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 30 (T = 0.3 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 30,
+  "T": 0.3,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 33172,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 25516,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     29
+    ],
+    "im_path": [
+     "C_im",
+     29
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n31.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 31 (T = 0.31 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 31,
+  "T": 0.31,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 34272,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 26296,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     30
+    ],
+    "im_path": [
+     "C_im",
+     30
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n32.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 32 (T = 0.32 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 32,
+  "T": 0.32,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 35372,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 27077,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     31
+    ],
+    "im_path": [
+     "C_im",
+     31
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n33.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 33 (T = 0.33 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 33,
+  "T": 0.33,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 36472,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 27854,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     32
+    ],
+    "im_path": [
+     "C_im",
+     32
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n34.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 34 (T = 0.34 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 34,
+  "T": 0.34,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 37572,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 28629,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     33
+    ],
+    "im_path": [
+     "C_im",
+     33
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n35.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 35 (T = 0.35 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 35,
+  "T": 0.35,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 38672,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 29412,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     34
+    ],
+    "im_path": [
+     "C_im",
+     34
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n36.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 36 (T = 0.36 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 36,
+  "T": 0.36,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 39772,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 30191,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     35
+    ],
+    "im_path": [
+     "C_im",
+     35
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n37.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 37 (T = 0.37 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 37,
+  "T": 0.37,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 40872,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 30970,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     36
+    ],
+    "im_path": [
+     "C_im",
+     36
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n38.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 38 (T = 0.38 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 38,
+  "T": 0.38,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 41972,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 31763,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     37
+    ],
+    "im_path": [
+     "C_im",
+     37
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n39.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 39 (T = 0.39 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 39,
+  "T": 0.39,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 43072,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 32552,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     38
+    ],
+    "im_path": [
+     "C_im",
+     38
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n40.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 40 (T = 0.4 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 40,
+  "T": 0.4,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 44172,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 33336,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     39
+    ],
+    "im_path": [
+     "C_im",
+     39
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n41.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 41 (T = 0.41 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 41,
+  "T": 0.41,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 45272,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 34115,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     40
+    ],
+    "im_path": [
+     "C_im",
+     40
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n42.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 42 (T = 0.42 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 42,
+  "T": 0.42,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 46372,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 34892,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     41
+    ],
+    "im_path": [
+     "C_im",
+     41
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n43.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 43 (T = 0.43 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 43,
+  "T": 0.43,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 47472,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 35671,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     42
+    ],
+    "im_path": [
+     "C_im",
+     42
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n44.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 44 (T = 0.44 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 44,
+  "T": 0.44,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 48572,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 36448,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     43
+    ],
+    "im_path": [
+     "C_im",
+     43
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n45.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 45 (T = 0.45 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 45,
+  "T": 0.45,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 49672,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 37230,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     44
+    ],
+    "im_path": [
+     "C_im",
+     44
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n46.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 46 (T = 0.46 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 46,
+  "T": 0.46,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 50772,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 38008,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     45
+    ],
+    "im_path": [
+     "C_im",
+     45
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n47.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 47 (T = 0.47 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 47,
+  "T": 0.47,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 51872,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 38783,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     46
+    ],
+    "im_path": [
+     "C_im",
+     46
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n48.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 48 (T = 0.48 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 48,
+  "T": 0.48,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 52972,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 39560,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     47
+    ],
+    "im_path": [
+     "C_im",
+     47
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n49.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 49 (T = 0.49 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 49,
+  "T": 0.49,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 54072,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 40337,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     48
+    ],
+    "im_path": [
+     "C_im",
+     48
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_deuteron_S4/deuteron_S4_dt0.01_n50.qasm.gz",
+  "description": "deuteron: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 50 (T = 0.5 MeV^-1)",
+  "family": "Hadamard test, deuteron S4",
+  "system": "deuteron",
+  "n": 50,
+  "T": 0.5,
+  "dt": 0.01,
+  "qubits": 17,
+  "cx": 55172,
+  "paper": "Fig. 13 (Table VI)",
+  "mode": "separate per n (merged half-layers)",
+  "bytes": 41110,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 257,
+   "test": 16,
+   "reference": {
+    "file": "data/site_encoding/deuteron_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     49
+    ],
+    "im_path": [
+     "C_im",
+     49
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n01.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 1 (T = 0.01 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 1,
+  "T": 0.01,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 2108,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 83962,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     0
+    ],
+    "im_path": [
+     "C_im",
+     0
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n02.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 2 (T = 0.02 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 2,
+  "T": 0.02,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 4216,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 84112,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     1
+    ],
+    "im_path": [
+     "C_im",
+     1
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n03.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 3 (T = 0.03 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 3,
+  "T": 0.03,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 6324,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 84262,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     2
+    ],
+    "im_path": [
+     "C_im",
+     2
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n04.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 4 (T = 0.04 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 4,
+  "T": 0.04,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 8432,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 84412,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     3
+    ],
+    "im_path": [
+     "C_im",
+     3
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n05.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 5 (T = 0.05 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 5,
+  "T": 0.05,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 10540,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 84562,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     4
+    ],
+    "im_path": [
+     "C_im",
+     4
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n06.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 6 (T = 0.06 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 6,
+  "T": 0.06,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 12648,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 84712,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     5
+    ],
+    "im_path": [
+     "C_im",
+     5
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n07.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 7 (T = 0.07 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 7,
+  "T": 0.07,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 14756,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 84862,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     6
+    ],
+    "im_path": [
+     "C_im",
+     6
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n08.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 8 (T = 0.08 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 8,
+  "T": 0.08,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 16864,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 85012,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     7
+    ],
+    "im_path": [
+     "C_im",
+     7
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n09.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 9 (T = 0.09 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 9,
+  "T": 0.09,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 18972,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 85162,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     8
+    ],
+    "im_path": [
+     "C_im",
+     8
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n10.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 10 (T = 0.1 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 10,
+  "T": 0.1,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 21080,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 85313,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     9
+    ],
+    "im_path": [
+     "C_im",
+     9
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n11.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 11 (T = 0.11 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 11,
+  "T": 0.11,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 23188,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 85463,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     10
+    ],
+    "im_path": [
+     "C_im",
+     10
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n12.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 12 (T = 0.12 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 12,
+  "T": 0.12,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 25296,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 85613,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     11
+    ],
+    "im_path": [
+     "C_im",
+     11
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n13.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 13 (T = 0.13 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 13,
+  "T": 0.13,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 27404,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 85763,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     12
+    ],
+    "im_path": [
+     "C_im",
+     12
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n14.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 14 (T = 0.14 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 14,
+  "T": 0.14,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 29512,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 85913,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     13
+    ],
+    "im_path": [
+     "C_im",
+     13
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n15.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 15 (T = 0.15 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 15,
+  "T": 0.15,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 31620,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 86063,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     14
+    ],
+    "im_path": [
+     "C_im",
+     14
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n16.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 16 (T = 0.16 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 16,
+  "T": 0.16,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 33728,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 86213,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     15
+    ],
+    "im_path": [
+     "C_im",
+     15
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n17.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 17 (T = 0.17 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 17,
+  "T": 0.17,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 35836,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 86363,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     16
+    ],
+    "im_path": [
+     "C_im",
+     16
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n18.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 18 (T = 0.18 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 18,
+  "T": 0.18,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 37944,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 86513,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     17
+    ],
+    "im_path": [
+     "C_im",
+     17
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n19.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 19 (T = 0.19 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 19,
+  "T": 0.19,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 40052,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 86663,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     18
+    ],
+    "im_path": [
+     "C_im",
+     18
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n20.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 20 (T = 0.2 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 20,
+  "T": 0.2,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 42160,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 86813,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     19
+    ],
+    "im_path": [
+     "C_im",
+     19
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n21.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 21 (T = 0.21 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 21,
+  "T": 0.21,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 44268,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 86963,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     20
+    ],
+    "im_path": [
+     "C_im",
+     20
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n22.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 22 (T = 0.22 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 22,
+  "T": 0.22,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 46376,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 87113,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     21
+    ],
+    "im_path": [
+     "C_im",
+     21
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n23.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 23 (T = 0.23 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 23,
+  "T": 0.23,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 48484,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 87263,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     22
+    ],
+    "im_path": [
+     "C_im",
+     22
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n24.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 24 (T = 0.24 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 24,
+  "T": 0.24,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 50592,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 87413,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     23
+    ],
+    "im_path": [
+     "C_im",
+     23
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n25.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 25 (T = 0.25 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 25,
+  "T": 0.25,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 52700,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 87563,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     24
+    ],
+    "im_path": [
+     "C_im",
+     24
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n26.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 26 (T = 0.26 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 26,
+  "T": 0.26,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 54808,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 87713,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     25
+    ],
+    "im_path": [
+     "C_im",
+     25
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n27.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 27 (T = 0.27 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 27,
+  "T": 0.27,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 56916,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 87863,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     26
+    ],
+    "im_path": [
+     "C_im",
+     26
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n28.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 28 (T = 0.28 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 28,
+  "T": 0.28,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 59024,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 88013,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     27
+    ],
+    "im_path": [
+     "C_im",
+     27
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n29.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 29 (T = 0.29 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 29,
+  "T": 0.29,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 61132,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 88163,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     28
+    ],
+    "im_path": [
+     "C_im",
+     28
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n30.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 30 (T = 0.3 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 30,
+  "T": 0.3,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 63240,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 88313,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     29
+    ],
+    "im_path": [
+     "C_im",
+     29
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n31.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 31 (T = 0.31 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 31,
+  "T": 0.31,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 65348,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 88463,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     30
+    ],
+    "im_path": [
+     "C_im",
+     30
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n32.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 32 (T = 0.32 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 32,
+  "T": 0.32,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 67456,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 88613,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     31
+    ],
+    "im_path": [
+     "C_im",
+     31
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n33.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 33 (T = 0.33 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 33,
+  "T": 0.33,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 69564,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 88763,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     32
+    ],
+    "im_path": [
+     "C_im",
+     32
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n34.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 34 (T = 0.34 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 34,
+  "T": 0.34,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 71672,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 88913,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     33
+    ],
+    "im_path": [
+     "C_im",
+     33
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n35.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 35 (T = 0.35 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 35,
+  "T": 0.35,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 73780,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 89063,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     34
+    ],
+    "im_path": [
+     "C_im",
+     34
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n36.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 36 (T = 0.36 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 36,
+  "T": 0.36,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 75888,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 89213,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     35
+    ],
+    "im_path": [
+     "C_im",
+     35
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n37.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 37 (T = 0.37 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 37,
+  "T": 0.37,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 77996,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 89363,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     36
+    ],
+    "im_path": [
+     "C_im",
+     36
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n38.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 38 (T = 0.38 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 38,
+  "T": 0.38,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 80104,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 89513,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     37
+    ],
+    "im_path": [
+     "C_im",
+     37
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n39.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 39 (T = 0.39 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 39,
+  "T": 0.39,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 82212,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 89663,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     38
+    ],
+    "im_path": [
+     "C_im",
+     38
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n40.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 40 (T = 0.4 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 40,
+  "T": 0.4,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 84320,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 89813,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     39
+    ],
+    "im_path": [
+     "C_im",
+     39
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n41.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 41 (T = 0.41 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 41,
+  "T": 0.41,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 86428,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 89963,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     40
+    ],
+    "im_path": [
+     "C_im",
+     40
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n42.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 42 (T = 0.42 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 42,
+  "T": 0.42,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 88536,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 90113,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     41
+    ],
+    "im_path": [
+     "C_im",
+     41
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n43.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 43 (T = 0.43 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 43,
+  "T": 0.43,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 90644,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 90263,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     42
+    ],
+    "im_path": [
+     "C_im",
+     42
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n44.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 44 (T = 0.44 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 44,
+  "T": 0.44,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 92752,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 90413,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     43
+    ],
+    "im_path": [
+     "C_im",
+     43
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n45.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 45 (T = 0.45 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 45,
+  "T": 0.45,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 94860,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 90563,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     44
+    ],
+    "im_path": [
+     "C_im",
+     44
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n46.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 46 (T = 0.46 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 46,
+  "T": 0.46,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 96968,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 90713,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     45
+    ],
+    "im_path": [
+     "C_im",
+     45
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n47.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 47 (T = 0.47 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 47,
+  "T": 0.47,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 99076,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 90863,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     46
+    ],
+    "im_path": [
+     "C_im",
+     46
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n48.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 48 (T = 0.48 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 48,
+  "T": 0.48,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 101184,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 91013,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     47
+    ],
+    "im_path": [
+     "C_im",
+     47
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n49.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 49 (T = 0.49 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 49,
+  "T": 0.49,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 103292,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 91163,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     48
+    ],
+    "im_path": [
+     "C_im",
+     48
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n50.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 50 (T = 0.5 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 50,
+  "T": 0.5,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 105400,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 91313,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     49
+    ],
+    "im_path": [
+     "C_im",
+     49
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n51.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 51 (T = 0.51 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 51,
+  "T": 0.51,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 107508,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 91463,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     50
+    ],
+    "im_path": [
+     "C_im",
+     50
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n52.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 52 (T = 0.52 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 52,
+  "T": 0.52,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 109616,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 91613,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     51
+    ],
+    "im_path": [
+     "C_im",
+     51
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n53.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 53 (T = 0.53 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 53,
+  "T": 0.53,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 111724,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 91763,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     52
+    ],
+    "im_path": [
+     "C_im",
+     52
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n54.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 54 (T = 0.54 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 54,
+  "T": 0.54,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 113832,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 91913,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     53
+    ],
+    "im_path": [
+     "C_im",
+     53
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n55.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 55 (T = 0.55 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 55,
+  "T": 0.55,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 115940,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 92063,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     54
+    ],
+    "im_path": [
+     "C_im",
+     54
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n56.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 56 (T = 0.56 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 56,
+  "T": 0.56,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 118048,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 92213,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     55
+    ],
+    "im_path": [
+     "C_im",
+     55
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n57.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 57 (T = 0.57 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 57,
+  "T": 0.57,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 120156,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 92363,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     56
+    ],
+    "im_path": [
+     "C_im",
+     56
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n58.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 58 (T = 0.58 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 58,
+  "T": 0.58,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 122264,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 92513,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     57
+    ],
+    "im_path": [
+     "C_im",
+     57
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n59.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 59 (T = 0.59 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 59,
+  "T": 0.59,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 124372,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 92663,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     58
+    ],
+    "im_path": [
+     "C_im",
+     58
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n60.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 60 (T = 0.6 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 60,
+  "T": 0.6,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 126480,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 92813,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     59
+    ],
+    "im_path": [
+     "C_im",
+     59
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n61.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 61 (T = 0.61 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 61,
+  "T": 0.61,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 128588,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 92963,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     60
+    ],
+    "im_path": [
+     "C_im",
+     60
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n62.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 62 (T = 0.62 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 62,
+  "T": 0.62,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 130696,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 93113,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     61
+    ],
+    "im_path": [
+     "C_im",
+     61
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n63.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 63 (T = 0.63 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 63,
+  "T": 0.63,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 132804,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 93263,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     62
+    ],
+    "im_path": [
+     "C_im",
+     62
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n64.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 64 (T = 0.64 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 64,
+  "T": 0.64,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 134912,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 93413,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     63
+    ],
+    "im_path": [
+     "C_im",
+     63
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n65.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 65 (T = 0.65 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 65,
+  "T": 0.65,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 137020,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 93563,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     64
+    ],
+    "im_path": [
+     "C_im",
+     64
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n66.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 66 (T = 0.66 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 66,
+  "T": 0.66,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 139128,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 93713,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     65
+    ],
+    "im_path": [
+     "C_im",
+     65
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n67.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 67 (T = 0.67 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 67,
+  "T": 0.67,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 141236,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 93863,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     66
+    ],
+    "im_path": [
+     "C_im",
+     66
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n68.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 68 (T = 0.68 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 68,
+  "T": 0.68,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 143344,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 94013,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     67
+    ],
+    "im_path": [
+     "C_im",
+     67
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n69.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 69 (T = 0.69 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 69,
+  "T": 0.69,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 145452,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 94163,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     68
+    ],
+    "im_path": [
+     "C_im",
+     68
+    ]
+   }
+  }
+ },
+ {
+  "file": "circuits/site_encoding/hadamard_triton_S4/triton_S4_dt0.01_n70.qasm",
+  "description": "triton: Hadamard test of the controlled fourth-order step S4, dt = 0.01 MeV^-1, n = 70 (T = 0.7 MeV^-1)",
+  "family": "Hadamard test, triton S4",
+  "system": "triton",
+  "n": 70,
+  "T": 0.7,
+  "dt": 0.01,
+  "qubits": 25,
+  "cx": 147560,
+  "paper": "Fig. 14 (Table VI)",
+  "mode": "one chain of single-step circuits, snapshot after every step",
+  "bytes": 94313,
+  "gates": "gates h, s, sdg, rz, ry, u1 (= p), x, cx as written by paper_v9/circuits/trotter_circuits.to_qasm; no transpiler",
+  "global_phase": "none (hand-built gate list)",
+  "source": "export/export_site.py (trotter_circuits.controlled_step_power)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 65793,
+   "test": 24,
+   "reference": {
+    "file": "data/site_encoding/triton_S4_dt0.01_overlaps.json",
+    "re_path": [
+     "C_re",
+     69
+    ],
+    "im_path": [
+     "C_im",
+     69
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,9663 @@
+[
+ {
+  "description": "controlled S2 step, 1 consecutive step(s), dt = 0.0075 MeV^-1 (build: a1_p0_steps.py, key steps.S2_n1)",
+  "family": "controlled step",
+  "dt": 0.0075,
+  "n": 1,
+  "T": 0.0075,
+  "sequence": [
+   [
+    "A",
+    0.00375
+   ],
+   [
+    "B",
+    0.0075
+   ],
+   [
+    "A",
+    0.00375
+   ]
+  ],
+  "build_cx": 7602,
+  "paper": "Table VII (S2 / S4 step rows, symmetric 4He column): 7 602 (single)",
+  "dt_source": "dt = 0.0075 MeV^-1 of a1_p0_steps.py / a2_p0_krylov.py: the step bound 0.99 pi/(E_max - E0) = 0.0074984 rounded; dt/2 = 0.00375 for the Richardson pair",
+  "global_phase_matters": "only when the amplitudes are compared with the operator itself (the dropped phase multiplies both control branches); not inside a Hadamard test",
+  "reference": "data/he4_L3_sym/controlled_steps.json#S2_n1",
+  "file": "circuits/he4_L3_sym/controlled_S2_dt0.0075_n1.qasm",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 12,
+  "cx": 7602,
+  "u": 10758,
+  "depth": 14006,
+  "bytes": 597970,
+  "bytes_uncompressed": 597970,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 12,
+    "cx": 7602,
+    "u": 10758,
+    "global_phase": 4.997167940301162,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "block_dev_control1": 6.788705534435382e-12,
+   "block_dev_control0": 6.7836893883840055e-12,
+   "build_block_dev_control1": 6.485028494368276e-12,
+   "HF_column_dev_vs_data": 2.0095517662812836e-12
+  },
+  "readout_text": "Choi check: control 1 -> S^n on the 157 valid codes, control 0 -> identity, after multiplying the amplitudes by exp(i global_phase)",
+  "readout": {
+   "type": "operator_column",
+   "input": 519,
+   "outputs": [
+    519,
+    528,
+    576,
+    768,
+    640,
+    544,
+    520,
+    592,
+    784,
+    656,
+    560,
+    832,
+    704,
+    800,
+    672,
+    584,
+    776,
+    648,
+    552,
+    848,
+    720,
+    816,
+    688,
+    840,
+    712,
+    808,
+    680,
+    529,
+    577,
+    769,
+    641,
+    545,
+    521,
+    593,
+    785,
+    657,
+    561,
+    833,
+    705,
+    801,
+    673,
+    585,
+    777,
+    649,
+    553,
+    849,
+    721,
+    817,
+    689,
+    841,
+    713,
+    809,
+    681,
+    530,
+    578,
+    770,
+    642,
+    546,
+    522,
+    594,
+    786,
+    658,
+    562,
+    834,
+    706,
+    802,
+    674,
+    586,
+    778,
+    650,
+    554,
+    850,
+    722,
+    818,
+    690,
+    842,
+    714,
+    810,
+    682,
+    531,
+    579,
+    771,
+    643,
+    547,
+    523,
+    595,
+    787,
+    659,
+    563,
+    835,
+    707,
+    803,
+    675,
+    587,
+    779,
+    651,
+    555,
+    851,
+    723,
+    819,
+    691,
+    843,
+    715,
+    811,
+    683,
+    532,
+    580,
+    772,
+    644,
+    548,
+    524,
+    596,
+    788,
+    660,
+    564,
+    836,
+    708,
+    804,
+    676,
+    588,
+    780,
+    652,
+    556,
+    852,
+    724,
+    820,
+    692,
+    844,
+    716,
+    812,
+    684,
+    533,
+    581,
+    773,
+    645,
+    549,
+    525,
+    597,
+    789,
+    661,
+    565,
+    837,
+    709,
+    805,
+    677,
+    589,
+    781,
+    653,
+    557,
+    853,
+    725,
+    821,
+    693,
+    845,
+    717,
+    813,
+    685
+   ],
+   "phase": 4.997167940301162,
+   "reference": {
+    "file": "data/he4_L3_sym/controlled_steps.json",
+    "path": [
+     "steps",
+     "S2_n1",
+     "HF_column_exact"
+    ]
+   },
+   "identity_input": 7,
+   "note": "control (qubit 9) = 1: column of S^n at HF on the 157 valid codes; control 0: identity; amplitudes multiplied by exp(i phase)"
+  },
+  "paper_cx": 7602
+ },
+ {
+  "description": "controlled S2 step, 2 consecutive step(s), dt = 0.0075 MeV^-1 (build: a1_p0_steps.py, key steps.S2_n2)",
+  "family": "controlled step",
+  "dt": 0.0075,
+  "n": 2,
+  "T": 0.015,
+  "sequence": [
+   [
+    "A",
+    0.00375
+   ],
+   [
+    "B",
+    0.0075
+   ],
+   [
+    "A",
+    0.0075
+   ],
+   [
+    "B",
+    0.0075
+   ],
+   [
+    "A",
+    0.00375
+   ]
+  ],
+  "build_cx": 12930,
+  "paper": "Table VII (S2 / S4 step rows, symmetric 4He column): 5 328 added (= 12 930 - 7 602)",
+  "dt_source": "dt = 0.0075 MeV^-1 of a1_p0_steps.py / a2_p0_krylov.py: the step bound 0.99 pi/(E_max - E0) = 0.0074984 rounded; dt/2 = 0.00375 for the Richardson pair",
+  "global_phase_matters": "only when the amplitudes are compared with the operator itself (the dropped phase multiplies both control branches); not inside a Hadamard test",
+  "reference": "data/he4_L3_sym/controlled_steps.json#S2_n2",
+  "file": "circuits/he4_L3_sym/controlled_S2_dt0.0075_n2.qasm.gz",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 12,
+  "cx": 12930,
+  "u": 18104,
+  "depth": 23740,
+  "bytes": 314119,
+  "bytes_uncompressed": 1008026,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 12,
+    "cx": 12930,
+    "u": 18104,
+    "global_phase": 6.2719261236432935,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "block_dev_control1": 1.0867440658672836e-11,
+   "block_dev_control0": 1.0861488263070508e-11,
+   "build_block_dev_control1": 1.0340430741386917e-11,
+   "HF_column_dev_vs_data": 3.0332609524694686e-12
+  },
+  "readout_text": "Choi check: control 1 -> S^n on the 157 valid codes, control 0 -> identity, after multiplying the amplitudes by exp(i global_phase)",
+  "readout": {
+   "type": "operator_column",
+   "input": 519,
+   "outputs": [
+    519,
+    528,
+    576,
+    768,
+    640,
+    544,
+    520,
+    592,
+    784,
+    656,
+    560,
+    832,
+    704,
+    800,
+    672,
+    584,
+    776,
+    648,
+    552,
+    848,
+    720,
+    816,
+    688,
+    840,
+    712,
+    808,
+    680,
+    529,
+    577,
+    769,
+    641,
+    545,
+    521,
+    593,
+    785,
+    657,
+    561,
+    833,
+    705,
+    801,
+    673,
+    585,
+    777,
+    649,
+    553,
+    849,
+    721,
+    817,
+    689,
+    841,
+    713,
+    809,
+    681,
+    530,
+    578,
+    770,
+    642,
+    546,
+    522,
+    594,
+    786,
+    658,
+    562,
+    834,
+    706,
+    802,
+    674,
+    586,
+    778,
+    650,
+    554,
+    850,
+    722,
+    818,
+    690,
+    842,
+    714,
+    810,
+    682,
+    531,
+    579,
+    771,
+    643,
+    547,
+    523,
+    595,
+    787,
+    659,
+    563,
+    835,
+    707,
+    803,
+    675,
+    587,
+    779,
+    651,
+    555,
+    851,
+    723,
+    819,
+    691,
+    843,
+    715,
+    811,
+    683,
+    532,
+    580,
+    772,
+    644,
+    548,
+    524,
+    596,
+    788,
+    660,
+    564,
+    836,
+    708,
+    804,
+    676,
+    588,
+    780,
+    652,
+    556,
+    852,
+    724,
+    820,
+    692,
+    844,
+    716,
+    812,
+    684,
+    533,
+    581,
+    773,
+    645,
+    549,
+    525,
+    597,
+    789,
+    661,
+    565,
+    837,
+    709,
+    805,
+    677,
+    589,
+    781,
+    653,
+    557,
+    853,
+    725,
+    821,
+    693,
+    845,
+    717,
+    813,
+    685
+   ],
+   "phase": 6.2719261236432935,
+   "reference": {
+    "file": "data/he4_L3_sym/controlled_steps.json",
+    "path": [
+     "steps",
+     "S2_n2",
+     "HF_column_exact"
+    ]
+   },
+   "identity_input": 7,
+   "note": "control (qubit 9) = 1: column of S^n at HF on the 157 valid codes; control 0: identity; amplitudes multiplied by exp(i phase)"
+  },
+  "paper_cx_added": 5328,
+  "paper_cx_added_relative_to": "circuits/he4_L3_sym/controlled_S2_dt0.0075_n1.qasm"
+ },
+ {
+  "description": "controlled S2 step, 3 consecutive step(s), dt = 0.0075 MeV^-1 (build: a1_p0_steps.py, key steps.S2_n3)",
+  "family": "controlled step",
+  "dt": 0.0075,
+  "n": 3,
+  "T": 0.0225,
+  "sequence": [
+   [
+    "A",
+    0.00375
+   ],
+   [
+    "B",
+    0.0075
+   ],
+   [
+    "A",
+    0.0075
+   ],
+   [
+    "B",
+    0.0075
+   ],
+   [
+    "A",
+    0.0075
+   ],
+   [
+    "B",
+    0.0075
+   ],
+   [
+    "A",
+    0.00375
+   ]
+  ],
+  "build_cx": 18258,
+  "paper": "Table VII (S2 / S4 step rows, symmetric 4He column): 5 328 added (= 18 258 - 12 930)",
+  "dt_source": "dt = 0.0075 MeV^-1 of a1_p0_steps.py / a2_p0_krylov.py: the step bound 0.99 pi/(E_max - E0) = 0.0074984 rounded; dt/2 = 0.00375 for the Richardson pair",
+  "global_phase_matters": "only when the amplitudes are compared with the operator itself (the dropped phase multiplies both control branches); not inside a Hadamard test",
+  "reference": "data/he4_L3_sym/controlled_steps.json#S2_n3",
+  "file": "circuits/he4_L3_sym/controlled_S2_dt0.0075_n3.qasm.gz",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 12,
+  "cx": 18258,
+  "u": 25450,
+  "depth": 33474,
+  "bytes": 440287,
+  "bytes_uncompressed": 1418084,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 12,
+    "cx": 18258,
+    "u": 25450,
+    "global_phase": 1.26349899980581,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "block_dev_control1": 1.49187034028606e-11,
+   "block_dev_control0": 1.4912737915854458e-11,
+   "build_block_dev_control1": 1.4166673865884219e-11,
+   "HF_column_dev_vs_data": 3.934474340080763e-12
+  },
+  "readout_text": "Choi check: control 1 -> S^n on the 157 valid codes, control 0 -> identity, after multiplying the amplitudes by exp(i global_phase)",
+  "readout": {
+   "type": "operator_column",
+   "input": 519,
+   "outputs": [
+    519,
+    528,
+    576,
+    768,
+    640,
+    544,
+    520,
+    592,
+    784,
+    656,
+    560,
+    832,
+    704,
+    800,
+    672,
+    584,
+    776,
+    648,
+    552,
+    848,
+    720,
+    816,
+    688,
+    840,
+    712,
+    808,
+    680,
+    529,
+    577,
+    769,
+    641,
+    545,
+    521,
+    593,
+    785,
+    657,
+    561,
+    833,
+    705,
+    801,
+    673,
+    585,
+    777,
+    649,
+    553,
+    849,
+    721,
+    817,
+    689,
+    841,
+    713,
+    809,
+    681,
+    530,
+    578,
+    770,
+    642,
+    546,
+    522,
+    594,
+    786,
+    658,
+    562,
+    834,
+    706,
+    802,
+    674,
+    586,
+    778,
+    650,
+    554,
+    850,
+    722,
+    818,
+    690,
+    842,
+    714,
+    810,
+    682,
+    531,
+    579,
+    771,
+    643,
+    547,
+    523,
+    595,
+    787,
+    659,
+    563,
+    835,
+    707,
+    803,
+    675,
+    587,
+    779,
+    651,
+    555,
+    851,
+    723,
+    819,
+    691,
+    843,
+    715,
+    811,
+    683,
+    532,
+    580,
+    772,
+    644,
+    548,
+    524,
+    596,
+    788,
+    660,
+    564,
+    836,
+    708,
+    804,
+    676,
+    588,
+    780,
+    652,
+    556,
+    852,
+    724,
+    820,
+    692,
+    844,
+    716,
+    812,
+    684,
+    533,
+    581,
+    773,
+    645,
+    549,
+    525,
+    597,
+    789,
+    661,
+    565,
+    837,
+    709,
+    805,
+    677,
+    589,
+    781,
+    653,
+    557,
+    853,
+    725,
+    821,
+    693,
+    845,
+    717,
+    813,
+    685
+   ],
+   "phase": 1.26349899980581,
+   "reference": {
+    "file": "data/he4_L3_sym/controlled_steps.json",
+    "path": [
+     "steps",
+     "S2_n3",
+     "HF_column_exact"
+    ]
+   },
+   "identity_input": 7,
+   "note": "control (qubit 9) = 1: column of S^n at HF on the 157 valid codes; control 0: identity; amplitudes multiplied by exp(i phase)"
+  },
+  "paper_cx_added": 5328,
+  "paper_cx_added_relative_to": "circuits/he4_L3_sym/controlled_S2_dt0.0075_n2.qasm.gz"
+ },
+ {
+  "description": "controlled S2 step, 1 consecutive step(s), dt = 0.00375 MeV^-1 (build: a1_p0_steps.py, key steps.S2_n1_dt0.00375)",
+  "family": "controlled step",
+  "dt": 0.00375,
+  "n": 1,
+  "T": 0.00375,
+  "sequence": [
+   [
+    "A",
+    0.001875
+   ],
+   [
+    "B",
+    0.00375
+   ],
+   [
+    "A",
+    0.001875
+   ]
+  ],
+  "build_cx": 7602,
+  "paper": "not in the paper (build check at dt/2)",
+  "dt_source": "dt = 0.0075 MeV^-1 of a1_p0_steps.py / a2_p0_krylov.py: the step bound 0.99 pi/(E_max - E0) = 0.0074984 rounded; dt/2 = 0.00375 for the Richardson pair",
+  "global_phase_matters": "only when the amplitudes are compared with the operator itself (the dropped phase multiplies both control branches); not inside a Hadamard test",
+  "reference": "data/he4_L3_sym/controlled_steps.json#S2_n1_dt0.00375",
+  "file": "circuits/he4_L3_sym/controlled_S2_dt0.00375_n1.qasm",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 12,
+  "cx": 7602,
+  "u": 10758,
+  "depth": 14006,
+  "bytes": 598243,
+  "bytes_uncompressed": 598243,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 12,
+    "cx": 7602,
+    "u": 10758,
+    "global_phase": 4.997167940301162,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "block_dev_control1": 6.786682030282913e-12,
+   "block_dev_control0": 6.7811481876736164e-12,
+   "build_block_dev_control1": 6.483470812779228e-12,
+   "HF_column_dev_vs_data": 1.86691813924394e-12
+  },
+  "readout_text": "Choi check: control 1 -> S^n on the 157 valid codes, control 0 -> identity, after multiplying the amplitudes by exp(i global_phase)",
+  "readout": {
+   "type": "operator_column",
+   "input": 519,
+   "outputs": [
+    519,
+    528,
+    576,
+    768,
+    640,
+    544,
+    520,
+    592,
+    784,
+    656,
+    560,
+    832,
+    704,
+    800,
+    672,
+    584,
+    776,
+    648,
+    552,
+    848,
+    720,
+    816,
+    688,
+    840,
+    712,
+    808,
+    680,
+    529,
+    577,
+    769,
+    641,
+    545,
+    521,
+    593,
+    785,
+    657,
+    561,
+    833,
+    705,
+    801,
+    673,
+    585,
+    777,
+    649,
+    553,
+    849,
+    721,
+    817,
+    689,
+    841,
+    713,
+    809,
+    681,
+    530,
+    578,
+    770,
+    642,
+    546,
+    522,
+    594,
+    786,
+    658,
+    562,
+    834,
+    706,
+    802,
+    674,
+    586,
+    778,
+    650,
+    554,
+    850,
+    722,
+    818,
+    690,
+    842,
+    714,
+    810,
+    682,
+    531,
+    579,
+    771,
+    643,
+    547,
+    523,
+    595,
+    787,
+    659,
+    563,
+    835,
+    707,
+    803,
+    675,
+    587,
+    779,
+    651,
+    555,
+    851,
+    723,
+    819,
+    691,
+    843,
+    715,
+    811,
+    683,
+    532,
+    580,
+    772,
+    644,
+    548,
+    524,
+    596,
+    788,
+    660,
+    564,
+    836,
+    708,
+    804,
+    676,
+    588,
+    780,
+    652,
+    556,
+    852,
+    724,
+    820,
+    692,
+    844,
+    716,
+    812,
+    684,
+    533,
+    581,
+    773,
+    645,
+    549,
+    525,
+    597,
+    789,
+    661,
+    565,
+    837,
+    709,
+    805,
+    677,
+    589,
+    781,
+    653,
+    557,
+    853,
+    725,
+    821,
+    693,
+    845,
+    717,
+    813,
+    685
+   ],
+   "phase": 4.997167940301162,
+   "reference": {
+    "file": "data/he4_L3_sym/controlled_steps.json",
+    "path": [
+     "steps",
+     "S2_n1_dt0.00375",
+     "HF_column_exact"
+    ]
+   },
+   "identity_input": 7,
+   "note": "control (qubit 9) = 1: column of S^n at HF on the 157 valid codes; control 0: identity; amplitudes multiplied by exp(i phase)"
+  }
+ },
+ {
+  "description": "controlled S4 step, 1 consecutive step(s), dt = 0.0075 MeV^-1 (build: a1_p0_steps.py, key steps.S4_n1)",
+  "family": "controlled step",
+  "dt": 0.0075,
+  "n": 1,
+  "T": 0.0075,
+  "sequence": [
+   [
+    "A",
+    0.0015543403942289088
+   ],
+   [
+    "B",
+    0.0031086807884578176
+   ],
+   [
+    "A",
+    0.0031086807884578176
+   ],
+   [
+    "B",
+    0.0031086807884578176
+   ],
+   [
+    "A",
+    -0.0009130211826867266
+   ],
+   [
+    "B",
+    -0.004934723153831271
+   ],
+   [
+    "A",
+    -0.0009130211826867266
+   ],
+   [
+    "B",
+    0.0031086807884578176
+   ],
+   [
+    "A",
+    0.0031086807884578176
+   ],
+   [
+    "B",
+    0.0031086807884578176
+   ],
+   [
+    "A",
+    0.0015543403942289088
+   ]
+  ],
+  "build_cx": 28914,
+  "paper": "Table VII (S2 / S4 step rows, symmetric 4He column): 28 914 (single)",
+  "dt_source": "dt = 0.0075 MeV^-1 of a1_p0_steps.py / a2_p0_krylov.py: the step bound 0.99 pi/(E_max - E0) = 0.0074984 rounded; dt/2 = 0.00375 for the Richardson pair",
+  "global_phase_matters": "only when the amplitudes are compared with the operator itself (the dropped phase multiplies both control branches); not inside a Hadamard test",
+  "reference": "data/he4_L3_sym/controlled_steps.json#S4_n1",
+  "file": "circuits/he4_L3_sym/controlled_S4_dt0.0075_n1.qasm.gz",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 12,
+  "cx": 28914,
+  "u": 40142,
+  "depth": 52942,
+  "bytes": 693089,
+  "bytes_uncompressed": 2239953,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 12,
+    "cx": 28914,
+    "u": 40142,
+    "global_phase": 3.813015366490017,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "block_dev_control1": 2.3016789595136756e-11,
+   "block_dev_control0": 2.3011734593645543e-11,
+   "build_block_dev_control1": 2.1813062310266543e-11,
+   "HF_column_dev_vs_data": 4.891884624280373e-12
+  },
+  "readout_text": "Choi check: control 1 -> S^n on the 157 valid codes, control 0 -> identity, after multiplying the amplitudes by exp(i global_phase)",
+  "readout": {
+   "type": "operator_column",
+   "input": 519,
+   "outputs": [
+    519,
+    528,
+    576,
+    768,
+    640,
+    544,
+    520,
+    592,
+    784,
+    656,
+    560,
+    832,
+    704,
+    800,
+    672,
+    584,
+    776,
+    648,
+    552,
+    848,
+    720,
+    816,
+    688,
+    840,
+    712,
+    808,
+    680,
+    529,
+    577,
+    769,
+    641,
+    545,
+    521,
+    593,
+    785,
+    657,
+    561,
+    833,
+    705,
+    801,
+    673,
+    585,
+    777,
+    649,
+    553,
+    849,
+    721,
+    817,
+    689,
+    841,
+    713,
+    809,
+    681,
+    530,
+    578,
+    770,
+    642,
+    546,
+    522,
+    594,
+    786,
+    658,
+    562,
+    834,
+    706,
+    802,
+    674,
+    586,
+    778,
+    650,
+    554,
+    850,
+    722,
+    818,
+    690,
+    842,
+    714,
+    810,
+    682,
+    531,
+    579,
+    771,
+    643,
+    547,
+    523,
+    595,
+    787,
+    659,
+    563,
+    835,
+    707,
+    803,
+    675,
+    587,
+    779,
+    651,
+    555,
+    851,
+    723,
+    819,
+    691,
+    843,
+    715,
+    811,
+    683,
+    532,
+    580,
+    772,
+    644,
+    548,
+    524,
+    596,
+    788,
+    660,
+    564,
+    836,
+    708,
+    804,
+    676,
+    588,
+    780,
+    652,
+    556,
+    852,
+    724,
+    820,
+    692,
+    844,
+    716,
+    812,
+    684,
+    533,
+    581,
+    773,
+    645,
+    549,
+    525,
+    597,
+    789,
+    661,
+    565,
+    837,
+    709,
+    805,
+    677,
+    589,
+    781,
+    653,
+    557,
+    853,
+    725,
+    821,
+    693,
+    845,
+    717,
+    813,
+    685
+   ],
+   "phase": 3.813015366490017,
+   "reference": {
+    "file": "data/he4_L3_sym/controlled_steps.json",
+    "path": [
+     "steps",
+     "S4_n1",
+     "HF_column_exact"
+    ]
+   },
+   "identity_input": 7,
+   "note": "control (qubit 9) = 1: column of S^n at HF on the 157 valid codes; control 0: identity; amplitudes multiplied by exp(i phase)"
+  },
+  "paper_cx": 28914
+ },
+ {
+  "description": "controlled S4 step, 2 consecutive step(s), dt = 0.0075 MeV^-1 (build: a1_p0_steps.py, key steps.S4_n2)",
+  "family": "controlled step",
+  "dt": 0.0075,
+  "n": 2,
+  "T": 0.015,
+  "sequence": [
+   [
+    "A",
+    0.0015543403942289088
+   ],
+   [
+    "B",
+    0.0031086807884578176
+   ],
+   [
+    "A",
+    0.0031086807884578176
+   ],
+   [
+    "B",
+    0.0031086807884578176
+   ],
+   [
+    "A",
+    -0.0009130211826867266
+   ],
+   [
+    "B",
+    -0.004934723153831271
+   ],
+   [
+    "A",
+    -0.0009130211826867266
+   ],
+   [
+    "B",
+    0.0031086807884578176
+   ],
+   [
+    "A",
+    0.0031086807884578176
+   ],
+   [
+    "B",
+    0.0031086807884578176
+   ],
+   [
+    "A",
+    0.0031086807884578176
+   ],
+   [
+    "B",
+    0.0031086807884578176
+   ],
+   [
+    "A",
+    0.0031086807884578176
+   ],
+   [
+    "B",
+    0.0031086807884578176
+   ],
+   [
+    "A",
+    -0.0009130211826867266
+   ],
+   [
+    "B",
+    -0.004934723153831271
+   ],
+   [
+    "A",
+    -0.0009130211826867266
+   ],
+   [
+    "B",
+    0.0031086807884578176
+   ],
+   [
+    "A",
+    0.0031086807884578176
+   ],
+   [
+    "B",
+    0.0031086807884578176
+   ],
+   [
+    "A",
+    0.0015543403942289088
+   ]
+  ],
+  "build_cx": 55554,
+  "paper": "Table VII (S2 / S4 step rows, symmetric 4He column): 26 640 added (= 55 554 - 28 914)",
+  "dt_source": "dt = 0.0075 MeV^-1 of a1_p0_steps.py / a2_p0_krylov.py: the step bound 0.99 pi/(E_max - E0) = 0.0074984 rounded; dt/2 = 0.00375 for the Richardson pair",
+  "global_phase_matters": "only when the amplitudes are compared with the operator itself (the dropped phase multiplies both control branches); not inside a Hadamard test",
+  "reference": "data/he4_L3_sym/controlled_steps.json#S4_n2",
+  "file": "circuits/he4_L3_sym/controlled_S4_dt0.0075_n2.qasm.gz",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 12,
+  "cx": 55554,
+  "u": 76872,
+  "depth": 101612,
+  "bytes": 1324437,
+  "bytes_uncompressed": 4291930,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 12,
+    "cx": 55554,
+    "u": 76872,
+    "global_phase": 3.9036209760210276,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "block_dev_control1": 4.334289107554083e-11,
+   "block_dev_control0": 4.334314258986221e-11,
+   "build_block_dev_control1": 4.1015093910575406e-11,
+   "HF_column_dev_vs_data": 1.0016986341565688e-11
+  },
+  "readout_text": "Choi check: control 1 -> S^n on the 157 valid codes, control 0 -> identity, after multiplying the amplitudes by exp(i global_phase)",
+  "readout": {
+   "type": "operator_column",
+   "input": 519,
+   "outputs": [
+    519,
+    528,
+    576,
+    768,
+    640,
+    544,
+    520,
+    592,
+    784,
+    656,
+    560,
+    832,
+    704,
+    800,
+    672,
+    584,
+    776,
+    648,
+    552,
+    848,
+    720,
+    816,
+    688,
+    840,
+    712,
+    808,
+    680,
+    529,
+    577,
+    769,
+    641,
+    545,
+    521,
+    593,
+    785,
+    657,
+    561,
+    833,
+    705,
+    801,
+    673,
+    585,
+    777,
+    649,
+    553,
+    849,
+    721,
+    817,
+    689,
+    841,
+    713,
+    809,
+    681,
+    530,
+    578,
+    770,
+    642,
+    546,
+    522,
+    594,
+    786,
+    658,
+    562,
+    834,
+    706,
+    802,
+    674,
+    586,
+    778,
+    650,
+    554,
+    850,
+    722,
+    818,
+    690,
+    842,
+    714,
+    810,
+    682,
+    531,
+    579,
+    771,
+    643,
+    547,
+    523,
+    595,
+    787,
+    659,
+    563,
+    835,
+    707,
+    803,
+    675,
+    587,
+    779,
+    651,
+    555,
+    851,
+    723,
+    819,
+    691,
+    843,
+    715,
+    811,
+    683,
+    532,
+    580,
+    772,
+    644,
+    548,
+    524,
+    596,
+    788,
+    660,
+    564,
+    836,
+    708,
+    804,
+    676,
+    588,
+    780,
+    652,
+    556,
+    852,
+    724,
+    820,
+    692,
+    844,
+    716,
+    812,
+    684,
+    533,
+    581,
+    773,
+    645,
+    549,
+    525,
+    597,
+    789,
+    661,
+    565,
+    837,
+    709,
+    805,
+    677,
+    589,
+    781,
+    653,
+    557,
+    853,
+    725,
+    821,
+    693,
+    845,
+    717,
+    813,
+    685
+   ],
+   "phase": 3.9036209760210276,
+   "reference": {
+    "file": "data/he4_L3_sym/controlled_steps.json",
+    "path": [
+     "steps",
+     "S4_n2",
+     "HF_column_exact"
+    ]
+   },
+   "identity_input": 7,
+   "note": "control (qubit 9) = 1: column of S^n at HF on the 157 valid codes; control 0: identity; amplitudes multiplied by exp(i phase)"
+  },
+  "paper_cx_added": 26640,
+  "paper_cx_added_relative_to": "circuits/he4_L3_sym/controlled_S4_dt0.0075_n1.qasm.gz"
+ },
+ {
+  "description": "Hadamard test of n = 1 controlled S2 steps, dt = 0.0075 (build: a2_p0_krylov.py (i), runs.S2_dt0.0075.gate_level.1)",
+  "family": "Hadamard test, S2 step",
+  "dt": 0.0075,
+  "n": 1,
+  "T": 0.0075,
+  "build_cx": 7602,
+  "paper": "Fig. 15 (a): gate-level check of the overlaps of the real-time route (product formula); the figure's series uses the step matrix at dt = 0.99 pi/(E_max - E0) = 0.0074984, which these circuits reproduce at dt = 0.0075",
+  "dt_source": "a2_p0_krylov.py: dt = 0.0075 (bound 0.0074984 rounded) and dt/2",
+  "global_phase_matters": "no (explicit test qubit: the phase multiplies A0 and A1 alike)",
+  "reference": "data/he4_L3_sym/s2_hadamard_overlaps.json#dt0.0075_n1",
+  "file": "circuits/he4_L3_sym/hadamard_S2_dt0.0075_n1.qasm",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 12,
+  "cx": 7602,
+  "u": 10759,
+  "depth": 14006,
+  "bytes": 598077,
+  "bytes_uncompressed": 598077,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 12,
+    "cx": 7602,
+    "u": 10759,
+    "global_phase": 5.42089953246562,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    0.5121060765182263,
+    0.7987501763739652
+   ],
+   "dev_vs_build": 8.12162859955365e-14
+  },
+  "readout_text": "C(n) = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^9]; complete test: final H on qubit 9 (Re C = P(0,HF) - P(1,HF)) or S^dag then H (Im C)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 9,
+   "reference": {
+    "file": "data/he4_L3_sym/s2_hadamard_overlaps.json",
+    "path": [
+     "values",
+     "dt0.0075_n1",
+     "C_gate_level"
+    ]
+   }
+  }
+ },
+ {
+  "description": "Hadamard test of n = 2 controlled S2 steps, dt = 0.0075 (build: a2_p0_krylov.py (i), runs.S2_dt0.0075.gate_level.2)",
+  "family": "Hadamard test, S2 step",
+  "dt": 0.0075,
+  "n": 2,
+  "T": 0.015,
+  "build_cx": 12930,
+  "paper": "Fig. 15 (a): gate-level check of the overlaps of the real-time route (product formula); the figure's series uses the step matrix at dt = 0.99 pi/(E_max - E0) = 0.0074984, which these circuits reproduce at dt = 0.0075",
+  "dt_source": "a2_p0_krylov.py: dt = 0.0075 (bound 0.0074984 rounded) and dt/2",
+  "global_phase_matters": "no (explicit test qubit: the phase multiplies A0 and A1 alike)",
+  "reference": "data/he4_L3_sym/s2_hadamard_overlaps.json#dt0.0075_n2",
+  "file": "circuits/he4_L3_sym/hadamard_S2_dt0.0075_n2.qasm.gz",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 12,
+  "cx": 12930,
+  "u": 18105,
+  "depth": 23740,
+  "bytes": 314187,
+  "bytes_uncompressed": 1008133,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 12,
+    "cx": 12930,
+    "u": 18105,
+    "global_phase": 0.4124724086281619,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    -0.4293651607066049,
+    0.7351175727428875
+   ],
+   "dev_vs_build": 1.2246721177733446e-13
+  },
+  "readout_text": "C(n) = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^9]; complete test: final H on qubit 9 (Re C = P(0,HF) - P(1,HF)) or S^dag then H (Im C)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 9,
+   "reference": {
+    "file": "data/he4_L3_sym/s2_hadamard_overlaps.json",
+    "path": [
+     "values",
+     "dt0.0075_n2",
+     "C_gate_level"
+    ]
+   }
+  }
+ },
+ {
+  "description": "Hadamard test of n = 3 controlled S2 steps, dt = 0.0075 (build: a2_p0_krylov.py (i), runs.S2_dt0.0075.gate_level.3)",
+  "family": "Hadamard test, S2 step",
+  "dt": 0.0075,
+  "n": 3,
+  "T": 0.0225,
+  "build_cx": 18258,
+  "paper": "Fig. 15 (a): gate-level check of the overlaps of the real-time route (product formula); the figure's series uses the step matrix at dt = 0.99 pi/(E_max - E0) = 0.0074984, which these circuits reproduce at dt = 0.0075",
+  "dt_source": "a2_p0_krylov.py: dt = 0.0075 (bound 0.0074984 rounded) and dt/2",
+  "global_phase_matters": "no (explicit test qubit: the phase multiplies A0 and A1 alike)",
+  "reference": "data/he4_L3_sym/s2_hadamard_overlaps.json#dt0.0075_n3",
+  "file": "circuits/he4_L3_sym/hadamard_S2_dt0.0075_n3.qasm.gz",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 12,
+  "cx": 18258,
+  "u": 25451,
+  "depth": 33474,
+  "bytes": 440356,
+  "bytes_uncompressed": 1418191,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 12,
+    "cx": 18258,
+    "u": 25451,
+    "global_phase": 1.687230591970264,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    -0.8170655399366991,
+    -0.13005937756451094
+   ],
+   "dev_vs_build": 1.6798279957042135e-13
+  },
+  "readout_text": "C(n) = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^9]; complete test: final H on qubit 9 (Re C = P(0,HF) - P(1,HF)) or S^dag then H (Im C)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 9,
+   "reference": {
+    "file": "data/he4_L3_sym/s2_hadamard_overlaps.json",
+    "path": [
+     "values",
+     "dt0.0075_n3",
+     "C_gate_level"
+    ]
+   }
+  }
+ },
+ {
+  "description": "Hadamard test of n = 1 controlled S2 steps, dt = 0.00375 (build: a2_p0_krylov.py (i), runs.S2_dt0.00375.gate_level.1)",
+  "family": "Hadamard test, S2 step",
+  "dt": 0.00375,
+  "n": 1,
+  "T": 0.00375,
+  "build_cx": 7602,
+  "paper": "Fig. 15 (a): gate-level check of the overlaps of the real-time route (product formula); the figure's series uses the step matrix at dt = 0.99 pi/(E_max - E0) = 0.0074984, which these circuits reproduce at dt = 0.0075",
+  "dt_source": "a2_p0_krylov.py: dt = 0.0075 (bound 0.0074984 rounded) and dt/2",
+  "global_phase_matters": "no (explicit test qubit: the phase multiplies A0 and A1 alike)",
+  "reference": "data/he4_L3_sym/s2_hadamard_overlaps.json#dt0.00375_n1",
+  "file": "circuits/he4_L3_sym/hadamard_S2_dt0.00375_n1.qasm",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 12,
+  "cx": 7602,
+  "u": 10759,
+  "depth": 14006,
+  "bytes": 598350,
+  "bytes_uncompressed": 598350,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 12,
+    "cx": 7602,
+    "u": 10759,
+    "global_phase": 5.42089953246562,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    0.8682956432570674,
+    0.4680440917309928
+   ],
+   "dev_vs_build": 8.77332627537547e-14
+  },
+  "readout_text": "C(n) = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^9]; complete test: final H on qubit 9 (Re C = P(0,HF) - P(1,HF)) or S^dag then H (Im C)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 9,
+   "reference": {
+    "file": "data/he4_L3_sym/s2_hadamard_overlaps.json",
+    "path": [
+     "values",
+     "dt0.00375_n1",
+     "C_gate_level"
+    ]
+   }
+  }
+ },
+ {
+  "description": "Hadamard test of n = 2 controlled S2 steps, dt = 0.00375 (build: a2_p0_krylov.py (i), runs.S2_dt0.00375.gate_level.2)",
+  "family": "Hadamard test, S2 step",
+  "dt": 0.00375,
+  "n": 2,
+  "T": 0.0075,
+  "build_cx": 12930,
+  "paper": "Fig. 15 (a): gate-level check of the overlaps of the real-time route (product formula); the figure's series uses the step matrix at dt = 0.99 pi/(E_max - E0) = 0.0074984, which these circuits reproduce at dt = 0.0075",
+  "dt_source": "a2_p0_krylov.py: dt = 0.0075 (bound 0.0074984 rounded) and dt/2",
+  "global_phase_matters": "no (explicit test qubit: the phase multiplies A0 and A1 alike)",
+  "reference": "data/he4_L3_sym/s2_hadamard_overlaps.json#dt0.00375_n2",
+  "file": "circuits/he4_L3_sym/hadamard_S2_dt0.00375_n2.qasm.gz",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 12,
+  "cx": 12930,
+  "u": 18105,
+  "depth": 23740,
+  "bytes": 314234,
+  "bytes_uncompressed": 1008650,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 12,
+    "cx": 12930,
+    "u": 18105,
+    "global_phase": 0.4124724086281548,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    0.5111893698605309,
+    0.8000357320442051
+   ],
+   "dev_vs_build": 1.4777835834667242e-13
+  },
+  "readout_text": "C(n) = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^9]; complete test: final H on qubit 9 (Re C = P(0,HF) - P(1,HF)) or S^dag then H (Im C)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 9,
+   "reference": {
+    "file": "data/he4_L3_sym/s2_hadamard_overlaps.json",
+    "path": [
+     "values",
+     "dt0.00375_n2",
+     "C_gate_level"
+    ]
+   }
+  }
+ },
+ {
+  "description": "Hadamard test of n = 3 controlled S2 steps, dt = 0.00375 (build: a2_p0_krylov.py (i), runs.S2_dt0.00375.gate_level.3)",
+  "family": "Hadamard test, S2 step",
+  "dt": 0.00375,
+  "n": 3,
+  "T": 0.01125,
+  "build_cx": 18258,
+  "paper": "Fig. 15 (a): gate-level check of the overlaps of the real-time route (product formula); the figure's series uses the step matrix at dt = 0.99 pi/(E_max - E0) = 0.0074984, which these circuits reproduce at dt = 0.0075",
+  "dt_source": "a2_p0_krylov.py: dt = 0.0075 (bound 0.0074984 rounded) and dt/2",
+  "global_phase_matters": "no (explicit test qubit: the phase multiplies A0 and A1 alike)",
+  "reference": "data/he4_L3_sym/s2_hadamard_overlaps.json#dt0.00375_n3",
+  "file": "circuits/he4_L3_sym/hadamard_S2_dt0.00375_n3.qasm.gz",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 12,
+  "cx": 18258,
+  "u": 25451,
+  "depth": 33474,
+  "bytes": 440416,
+  "bytes_uncompressed": 1418952,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 12,
+    "cx": 18258,
+    "u": 25451,
+    "global_phase": 1.687230591970271,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    0.03172682509703565,
+    0.8991857101660239
+   ],
+   "dev_vs_build": 1.8634797795625725e-13
+  },
+  "readout_text": "C(n) = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^9]; complete test: final H on qubit 9 (Re C = P(0,HF) - P(1,HF)) or S^dag then H (Im C)",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 9,
+   "reference": {
+    "file": "data/he4_L3_sym/s2_hadamard_overlaps.json",
+    "path": [
+     "values",
+     "dt0.00375_n3",
+     "C_gate_level"
+    ]
+   }
+  }
+ },
+ {
+  "description": "walk W (build: a3_p0_walk.py WALK, a4_p0_cheb.py WALK)",
+  "family": "walk",
+  "build_cx": 5335,
+  "paper": "Table VII walk / controlled walk row: 5 335",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "see readout",
+  "reference": "data/he4_L3_sym/chebyshev_moments.json",
+  "file": "circuits/he4_L3_sym/walk.qasm",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 13,
+  "cx": 5335,
+  "u": 7627,
+  "depth": 10035,
+  "bytes": 419566,
+  "bytes_uncompressed": 419566,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 13,
+    "cx": 5335,
+    "u": 7627,
+    "global_phase": 5.313061536106961,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "moments_k8_amplitude_dev": 5.026365978294106e-12
+  },
+  "readout_text": "amplitude readout <0,HF|W^k|0,HF> = exp(i k phi_W) <0,HF|W'^k|0,HF> (W' = file, phi_W = global phase); expectation values (Chebyshev chain) do not depend on it",
+  "readout": {
+   "type": "walk_power",
+   "ref": 7,
+   "k_max": 8,
+   "phase": 5.313061536106961,
+   "reference": {
+    "file": "data/he4_L3_sym/chebyshev_moments.json",
+    "path": [
+     "moments_exact"
+    ]
+   },
+   "note": "<0,HF|W^k|0,HF> exp(i k phase) = mu_k, k = 0..8"
+  },
+  "paper_cx": 5335
+ },
+ {
+  "description": "block encoding U_H (build: a3_p0_walk.py UH, a4_p0_cheb.py UH); odd Chebyshev moments mu_{2k+1} = <psi_k|U_H|psi_k>",
+  "family": "block encoding",
+  "build_cx": 5334,
+  "paper": "Fig. 15 (Chebyshev route, odd moments)",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "see readout",
+  "reference": "data/he4_L3_sym/chebyshev_moments.json",
+  "file": "circuits/he4_L3_sym/U_H.qasm",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 13,
+  "cx": 5334,
+  "u": 7624,
+  "depth": 10035,
+  "bytes": 419420,
+  "bytes_uncompressed": 419420,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 13,
+    "cx": 5334,
+    "u": 7624,
+    "global_phase": 2.1714688825171677,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "block_dev": 5.422469923678511e-13,
+   "squared_dev": 1.3179132648282346e-12
+  },
+  "readout_text": "mu_{2k+1} = Re[ exp(i phi_UH) <psi_k| U_H' |psi_k> ] with U_H' = this file, phi_UH its global phase; the phase matters (U_H itself is Hermitian only with it)",
+  "readout": {
+   "type": "amplitudes",
+   "phase": 2.1714688825171677,
+   "items": [
+    {
+     "input": 7,
+     "output": 7,
+     "reference": {
+      "file": "data/he4_L3_sym/chebyshev_moments.json",
+      "path": [
+       "moments_exact",
+       1
+      ]
+     },
+     "what": "<0,HF|U_H|0,HF> = mu_1 = <HF|(H - c)/alpha|HF>"
+    }
+   ]
+  }
+ },
+ {
+  "description": "controlled walk (build: a3_p0_walk.py CWALK = run_qkrylov.py CW, control on qubit 13)",
+  "family": "controlled walk",
+  "build_cx": 6503,
+  "paper": "Table VII walk / controlled walk row: 6 503",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "see readout",
+  "reference": "data/he4_L3_sym/register.json",
+  "file": "circuits/he4_L3_sym/controlled_walk.qasm",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 14,
+  "cx": 6503,
+  "u": 8797,
+  "depth": 12339,
+  "bytes": 476853,
+  "bytes_uncompressed": 476853,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 14,
+    "cx": 6503,
+    "u": 8797,
+    "global_phase": 6.177438027921136,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "control0_identity_dev": 3.289573613182887e-13,
+   "control1_vs_walk_dev": 5.829600121357211e-16
+  },
+  "readout_text": "Choi or random-state check against W (control 1) and identity (control 0) after multiplying by exp(i global_phase); inside the GQSP signals the phase cancels",
+  "readout": {
+   "type": "amplitudes",
+   "phase": 6.177438027921136,
+   "items": [
+    {
+     "input": 7,
+     "output": 7,
+     "expect": [
+      1.0,
+      0.0
+     ],
+     "what": "control 0: identity"
+    },
+    {
+     "input": 8199,
+     "output": 8199,
+     "reference": {
+      "file": "data/he4_L3_sym/chebyshev_moments.json",
+      "path": [
+       "moments_exact",
+       1
+      ]
+     },
+     "what": "control 1: <0,HF|W|0,HF> = mu_1"
+    }
+   ]
+  },
+  "paper_cx": 6503
+ },
+ {
+  "description": "reflection R used to form the inverse signal (build: a3b_gqsp.py / run_qkrylov.py RQ)",
+  "family": "reflection",
+  "build_cx": 1,
+  "paper": "(part of the GQSP signals)",
+  "global_phase_matters": "the transpiled circuit is 1 - 2|00><00|; R = exp(i pi) times it. Inside Sinv = R cW R the two phases cancel",
+  "reference": "data/he4_L3_sym/register.json",
+  "file": "circuits/he4_L3_sym/reflection.qasm",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 14,
+  "cx": 1,
+  "u": 4,
+  "depth": 3,
+  "bytes": 637,
+  "bytes_uncompressed": 637,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 14,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1415926535897927,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "dev_from_2P00_minus_1": 6.277862297221656e-16
+  },
+  "readout_text": "matrix check",
+  "readout": {
+   "type": "amplitudes",
+   "phase": 3.1415926535897927,
+   "items": [
+    {
+     "input": 7,
+     "output": 7,
+     "expect": [
+      1.0,
+      0.0
+     ],
+     "what": "ancillas 0: +1"
+    },
+    {
+     "input": 519,
+     "output": 519,
+     "expect": [
+      -1.0,
+      0.0
+     ],
+     "what": "ancilla set: -1"
+    }
+   ]
+  }
+ },
+ {
+  "description": "Chebyshev chain W^k |0,HF>, k <= 20 (build: a4_p0_cheb.py, states passed walk by walk)",
+  "family": "Chebyshev walk chain",
+  "order_max": 41,
+  "build_cx_per_walk": 5335,
+  "build_cx_U_H": 5334,
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "paper": "Fig. 15 (a), Chebyshev route: gate-level moments up to order 41",
+  "global_phase_matters": "walk phase: no (moments are expectation values); U_H phase: yes for the odd moments, see readout",
+  "reference": "data/he4_L3_sym/chebyshev_moments.json",
+  "file": "circuits/he4_L3_sym/cheb_walk_chain_k20.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 13,
+  "cx": 106700,
+  "u": 152543,
+  "depth": 200264,
+  "bytes": 410616,
+  "bytes_uncompressed": 410616,
+  "pieces": [
+   {
+    "name": "walk",
+    "qubits": 13,
+    "cx": 5335,
+    "u": 7627,
+    "global_phase": 5.313061536106961,
+    "calls": 20
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "walks": 20,
+   "moments_dev_vs_build": 1.9686474672653276e-12,
+   "moments_dev_vs_exact": 1.6129320101754274e-12,
+   "final_state_unrolled_vs_piecewise": 4.094300213216723e-15,
+   "cx_unrolled": 106700
+  },
+  "readout_text": "mu_2k = 2 sum_{x: bits 9, 10 = 0} |psi_k(x)|^2 - 1; mu_{2k+1} = Re[exp(i phi_UH) <psi_k|U_H'|psi_k>]",
+  "readout": {
+   "type": "chebyshev_chain",
+   "walk_gate": "walk",
+   "ancilla_qubits": [
+    9,
+    10
+   ],
+   "U_H_file": "circuits/he4_L3_sym/U_H.qasm",
+   "U_H_phase": 2.1714688825171677,
+   "n_max": 41,
+   "reference": {
+    "file": "data/he4_L3_sym/chebyshev_moments.json",
+    "path": [
+     "moments_walk"
+    ]
+   },
+   "note": "psi_k = state after the k-th walk call (psi_0 after the x prelude); mu_2k = 2 P(ancillas 0) - 1; mu_2k+1 = Re[exp(i U_H_phase) <psi_k|U_H'|psi_k>]"
+  }
+ },
+ {
+  "description": "GQSP Hadamard test, n = 1 (T = n dt = 0.007498369 MeV^-1, dt = 0.99 pi/(E_max - E0) = 0.007498369 MeV^-1)",
+  "family": "GQSP Hadamard test",
+  "T": 0.007498369419723144,
+  "tau": 1.7229667245194504,
+  "d": 6,
+  "n_controlled_walks": 12,
+  "dt": 0.007498369419723144,
+  "n": 1,
+  "build_cx": 78066,
+  "build_cx_source": "qkrylov_he4.json rows[0]",
+  "paper": "Fig. 15 (a), real-time route with overlaps from qubitized evolution (first 14 time steps)",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#n01",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_n01.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 78066,
+  "u": 105684,
+  "depth": 147816,
+  "bytes": 934134,
+  "bytes_uncompressed": 934134,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 6
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 6
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1415926535898144,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.455374367007222,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.220446049250313e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.94145394876813,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.57974459826465,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.75572788008303,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6322682366490806,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1415926535897842,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    0.1441081659663432,
+    0.9382823109517814
+   ],
+   "dev_vs_build": 5.765157594034138e-13,
+   "dev_vs_polynomial": 2.6086764555709153e-12,
+   "unrolled_vs_piecewise": 1.1585783692784469e-14,
+   "cx_unrolled": 78066
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "n01",
+     "M_build"
+    ]
+   }
+  }
+ },
+ {
+  "description": "GQSP Hadamard test, n = 2 (T = n dt = 0.01499674 MeV^-1, dt = 0.99 pi/(E_max - E0) = 0.007498369 MeV^-1)",
+  "family": "GQSP Hadamard test",
+  "T": 0.014996738839446288,
+  "tau": 3.445933449038901,
+  "d": 9,
+  "n_controlled_walks": 18,
+  "dt": 0.007498369419723144,
+  "n": 2,
+  "build_cx": 117100,
+  "build_cx_source": "qkrylov_he4.json rows[1]",
+  "paper": "Fig. 15 (a), real-time route with overlaps from qubitized evolution (first 14 time steps)",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#n02",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_n02.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 117100,
+  "u": 158525,
+  "depth": 221712,
+  "bytes": 937091,
+  "bytes_uncompressed": 937091,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 9
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 9
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.570796326794989,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6058168590798214,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.521684883840675,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 5.329070518200751e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6101910282637704,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.3625733847041026,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6422327732853983,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.5543122344752192e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6384931604967798,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_013",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.911366702975201,
+    "calls": 1
+   },
+   {
+    "name": "rot_014",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": -0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_015",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.5216848838406705,
+    "calls": 1
+   },
+   {
+    "name": "rot_016",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.3322676295501878e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_017",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6058168590798187,
+    "calls": 1
+   },
+   {
+    "name": "rot_018",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.71238898038471,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    -0.8352092944609932,
+    0.17647542048184395
+   ],
+   "dev_vs_build": 7.90985665844951e-13,
+   "dev_vs_polynomial": 4.4199223183910246e-12,
+   "unrolled_vs_piecewise": 7.110247243427409e-15,
+   "cx_unrolled": 117100
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "n02",
+     "M_build"
+    ]
+   }
+  }
+ },
+ {
+  "description": "GQSP Hadamard test, n = 3 (T = n dt = 0.02249511 MeV^-1, dt = 0.99 pi/(E_max - E0) = 0.007498369 MeV^-1)",
+  "family": "GQSP Hadamard test",
+  "T": 0.022495108259169432,
+  "tau": 5.1689001735583515,
+  "d": 11,
+  "n_controlled_walks": 22,
+  "dt": 0.007498369419723144,
+  "n": 3,
+  "build_cx": 143122,
+  "build_cx_source": "qkrylov_he4.json rows[2]",
+  "paper": "Fig. 15 (a), real-time route with overlaps from qubitized evolution (first 14 time steps)",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#n03",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_n03.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 143122,
+  "u": 193751,
+  "depth": 270976,
+  "bytes": 938961,
+  "bytes_uncompressed": 938961,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 11
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 11
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.570796326794909,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.23273059963891,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.470958278891821,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179582,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.92136725908261,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": -0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.778632112523109,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179585,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.732228064490427,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.863143306602353,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_013",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.765743523466913,
+    "calls": 1
+   },
+   {
+    "name": "rot_014",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_015",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.525191370026917,
+    "calls": 1
+   },
+   {
+    "name": "rot_016",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_017",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.921367259082608,
+    "calls": 1
+   },
+   {
+    "name": "rot_018",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_019",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.470958278891821,
+    "calls": 1
+   },
+   {
+    "name": "rot_020",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": -0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_021",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.747624683575925,
+    "calls": 1
+   },
+   {
+    "name": "rot_022",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.570796326794881,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    -0.13665998388557302,
+    -0.8190130850286255
+   ],
+   "dev_vs_build": 9.170466515703464e-13,
+   "dev_vs_polynomial": 4.376694546222539e-12,
+   "unrolled_vs_piecewise": 1.586922456870977e-14,
+   "cx_unrolled": 143122
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "n03",
+     "M_build"
+    ]
+   }
+  }
+ },
+ {
+  "description": "GQSP Hadamard test, n = 4 (T = n dt = 0.02999348 MeV^-1, dt = 0.99 pi/(E_max - E0) = 0.007498369 MeV^-1)",
+  "family": "GQSP Hadamard test",
+  "T": 0.029993477678892575,
+  "tau": 6.891866898077802,
+  "d": 13,
+  "n_controlled_walks": 26,
+  "dt": 0.007498369419723144,
+  "n": 4,
+  "build_cx": 169144,
+  "build_cx_source": "qkrylov_he4.json rows[3]",
+  "paper": "Fig. 15 (a), real-time route with overlaps from qubitized evolution (first 14 time steps)",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#n04",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_n04.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 169144,
+  "u": 228977,
+  "depth": 320240,
+  "bytes": 940827,
+  "bytes_uncompressed": 940827,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 13
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 13
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.570796326794933,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.095389706849234,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.73123938048482,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.552713678800501e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6211870186309847,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6261755161470335,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6055301808495512,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.7548528026482355,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_013",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.85862596614132,
+    "calls": 1
+   },
+   {
+    "name": "rot_014",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_015",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.963899288335796,
+    "calls": 1
+   },
+   {
+    "name": "rot_016",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_017",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.127634300858805,
+    "calls": 1
+   },
+   {
+    "name": "rot_018",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_019",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6261755161470326,
+    "calls": 1
+   },
+   {
+    "name": "rot_020",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_021",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.645975295279241,
+    "calls": 1
+   },
+   {
+    "name": "rot_022",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_023",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.731239380484822,
+    "calls": 1
+   },
+   {
+    "name": "rot_024",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_025",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6059675375583984,
+    "calls": 1
+   },
+   {
+    "name": "rot_026",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.5707963267948952,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    0.8973526672657727,
+    -0.1560067902213076
+   ],
+   "dev_vs_build": 1.1897260402627707e-12,
+   "dev_vs_polynomial": 3.1935070573140494e-12,
+   "unrolled_vs_piecewise": 1.7166234515550904e-14,
+   "cx_unrolled": 169144
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "n04",
+     "M_build"
+    ]
+   }
+  }
+ },
+ {
+  "description": "GQSP Hadamard test, n = 5 (T = n dt = 0.03749185 MeV^-1, dt = 0.99 pi/(E_max - E0) = 0.007498369 MeV^-1)",
+  "family": "GQSP Hadamard test",
+  "T": 0.03749184709861572,
+  "tau": 8.614833622597253,
+  "d": 16,
+  "n_controlled_walks": 32,
+  "dt": 0.007498369419723144,
+  "n": 5,
+  "build_cx": 208176,
+  "build_cx_source": "qkrylov_he4.json rows[4]",
+  "paper": "Fig. 15 (a), real-time route with overlaps from qubitized evolution (first 14 time steps)",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#n05",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_n05.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 208176,
+  "u": 281814,
+  "depth": 394136,
+  "bytes": 943540,
+  "bytes_uncompressed": 943540,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 16
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 16
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1415926535898038,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.7481869956452805,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179583,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6285335497490943,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795765,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.896470781185603,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.70327374685382,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179577,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.132281594824269,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179583,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.6606944013946183,
+    "calls": 1
+   },
+   {
+    "name": "rot_013",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.3322676295501878e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_014",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.540849587793229,
+    "calls": 1
+   },
+   {
+    "name": "rot_015",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_016",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6275069087140173,
+    "calls": 1
+   },
+   {
+    "name": "rot_017",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_018",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6269988666691289,
+    "calls": 1
+   },
+   {
+    "name": "rot_019",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.3322676295501878e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_020",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.6606944013946165,
+    "calls": 1
+   },
+   {
+    "name": "rot_021",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.220446049250313e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_022",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.132281594824273,
+    "calls": 1
+   },
+   {
+    "name": "rot_023",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_024",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.767379404453198,
+    "calls": 1
+   },
+   {
+    "name": "rot_025",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_026",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.757601683310864,
+    "calls": 1
+   },
+   {
+    "name": "rot_027",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": -0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_028",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.515155796121072,
+    "calls": 1
+   },
+   {
+    "name": "rot_029",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 9.992007221626409e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_030",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.199296576072774,
+    "calls": 1
+   },
+   {
+    "name": "rot_031",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_032",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.1094237467877974e-14,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    0.2890569770574079,
+    0.9482861787311265
+   ],
+   "dev_vs_build": 1.6152305898669431e-12,
+   "dev_vs_polynomial": 2.574847423024413e-12,
+   "unrolled_vs_piecewise": 1.3773730616714159e-14,
+   "cx_unrolled": 208176
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "n05",
+     "M_build"
+    ]
+   }
+  }
+ },
+ {
+  "description": "GQSP Hadamard test, n = 6 (T = n dt = 0.04499022 MeV^-1, dt = 0.99 pi/(E_max - E0) = 0.007498369 MeV^-1)",
+  "family": "GQSP Hadamard test",
+  "T": 0.044990216518338864,
+  "tau": 10.337800347116703,
+  "d": 18,
+  "n_controlled_walks": 36,
+  "dt": 0.007498369419723144,
+  "n": 6,
+  "build_cx": 234198,
+  "build_cx_source": "qkrylov_he4.json rows[5]",
+  "paper": "Fig. 15 (a), real-time route with overlaps from qubitized evolution (first 14 time steps)",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#n06",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_n06.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 234198,
+  "u": 317040,
+  "depth": 443400,
+  "bytes": 945405,
+  "bytes_uncompressed": 945405,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 18
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 18
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1415926535898215,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6064094370012736,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.9968028886505635e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.76556175221489,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179579,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.6714410354129576,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.9968028886505635e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.727439337897623,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 7.549516567451064e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.98368952632849,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.69781797111612,
+    "calls": 1
+   },
+   {
+    "name": "rot_013",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179584,
+    "calls": 1
+   },
+   {
+    "name": "rot_014",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.7598930540587645,
+    "calls": 1
+   },
+   {
+    "name": "rot_015",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.884981308350689e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_016",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.050167307084823,
+    "calls": 1
+   },
+   {
+    "name": "rot_017",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_018",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.749608462803558,
+    "calls": 1
+   },
+   {
+    "name": "rot_019",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_020",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.751869967567625,
+    "calls": 1
+   },
+   {
+    "name": "rot_021",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.3322676295501878e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_022",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.759893054058765,
+    "calls": 1
+   },
+   {
+    "name": "rot_023",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.3322676295501878e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_024",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.69781797111612,
+    "calls": 1
+   },
+   {
+    "name": "rot_025",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_026",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.983689526328495,
+    "calls": 1
+   },
+   {
+    "name": "rot_027",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_028",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.7274393378976187,
+    "calls": 1
+   },
+   {
+    "name": "rot_029",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": -0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_030",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6198969930749563,
+    "calls": 1
+   },
+   {
+    "name": "rot_031",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_032",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.765561752214888,
+    "calls": 1
+   },
+   {
+    "name": "rot_033",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.5543122344752192e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_034",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6064094370012727,
+    "calls": 1
+   },
+   {
+    "name": "rot_035",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_036",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1415926535898038,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    -0.8777294955000067,
+    0.43594324311365457
+   ],
+   "dev_vs_build": 1.8099215577142225e-12,
+   "dev_vs_polynomial": 3.3949149346961123e-12,
+   "unrolled_vs_piecewise": 1.8458459462197553e-14,
+   "cx_unrolled": 234198
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "n06",
+     "M_build"
+    ]
+   }
+  }
+ },
+ {
+  "description": "GQSP Hadamard test, n = 7 (T = n dt = 0.05248859 MeV^-1, dt = 0.99 pi/(E_max - E0) = 0.007498369 MeV^-1)",
+  "family": "GQSP Hadamard test",
+  "T": 0.05248858593806201,
+  "tau": 12.060767071636153,
+  "d": 20,
+  "n_controlled_walks": 40,
+  "dt": 0.007498369419723144,
+  "n": 7,
+  "build_cx": 260220,
+  "build_cx_source": "qkrylov_he4.json rows[6]",
+  "paper": "Fig. 15 (a), real-time route with overlaps from qubitized evolution (first 14 time steps)",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#n07",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_n07.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 260220,
+  "u": 352266,
+  "depth": 492664,
+  "bytes": 947282,
+  "bytes_uncompressed": 947282,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 20
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 20
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1415926535898024,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.215875175412833,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.107825191113079e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.649967566169652,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179578,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.763779304347034,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179583,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.0090418275935065,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179578,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.691411854040153,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.6524077507368506,
+    "calls": 1
+   },
+   {
+    "name": "rot_013",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179579,
+    "calls": 1
+   },
+   {
+    "name": "rot_014",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.0679628730126947,
+    "calls": 1
+   },
+   {
+    "name": "rot_015",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 7.105427357601002e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_016",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.058392679411221,
+    "calls": 1
+   },
+   {
+    "name": "rot_017",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.9968028886505635e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_018",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.891862950211898,
+    "calls": 1
+   },
+   {
+    "name": "rot_019",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.220446049250313e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_020",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.75965375184393,
+    "calls": 1
+   },
+   {
+    "name": "rot_021",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_022",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.891862950211895,
+    "calls": 1
+   },
+   {
+    "name": "rot_023",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_024",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.751617636187797,
+    "calls": 1
+   },
+   {
+    "name": "rot_025",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_026",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6064114091579214,
+    "calls": 1
+   },
+   {
+    "name": "rot_027",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_028",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.6524077507368684,
+    "calls": 1
+   },
+   {
+    "name": "rot_029",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_030",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6189186822677728,
+    "calls": 1
+   },
+   {
+    "name": "rot_031",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_032",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.753215851682681,
+    "calls": 1
+   },
+   {
+    "name": "rot_033",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179585,
+    "calls": 1
+   },
+   {
+    "name": "rot_034",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.763779304347035,
+    "calls": 1
+   },
+   {
+    "name": "rot_035",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_036",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.649967566169674,
+    "calls": 1
+   },
+   {
+    "name": "rot_037",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_038",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.747895948103942,
+    "calls": 1
+   },
+   {
+    "name": "rot_039",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.2212453270876722e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_040",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.141592653589804,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    -0.4751164672285242,
+    -0.7516082064425678
+   ],
+   "dev_vs_build": 1.8197383686801155e-12,
+   "dev_vs_polynomial": 6.811428868551163e-12,
+   "unrolled_vs_piecewise": 1.7181104345514777e-14,
+   "cx_unrolled": 260220
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "n07",
+     "M_build"
+    ]
+   }
+  }
+ },
+ {
+  "description": "GQSP Hadamard test, n = 8 (T = n dt = 0.05998696 MeV^-1, dt = 0.99 pi/(E_max - E0) = 0.007498369 MeV^-1)",
+  "family": "GQSP Hadamard test",
+  "T": 0.05998695535778515,
+  "tau": 13.783733796155603,
+  "d": 22,
+  "n_controlled_walks": 44,
+  "dt": 0.007498369419723144,
+  "n": 8,
+  "build_cx": 286242,
+  "build_cx_source": "qkrylov_he4.json rows[7]",
+  "paper": "Fig. 15 (a), real-time route with overlaps from qubitized evolution (first 14 time steps)",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#n08",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_n08.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 286242,
+  "u": 387492,
+  "depth": 541928,
+  "bytes": 949147,
+  "bytes_uncompressed": 949147,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 22
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 22
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179577,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.085079438710565,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179584,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.856738953748068,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795765,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.5845745237069746,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 7.549516567451064e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.0132991091574883,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 7.771561172376096e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.7519870468954295,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.28318530717958,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.998053327915473,
+    "calls": 1
+   },
+   {
+    "name": "rot_013",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 9.325873406851315e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_014",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.927442948096914,
+    "calls": 1
+   },
+   {
+    "name": "rot_015",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_016",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.6592464875436495,
+    "calls": 1
+   },
+   {
+    "name": "rot_017",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_018",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.665221760232649,
+    "calls": 1
+   },
+   {
+    "name": "rot_019",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.552713678800501e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_020",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.7455747510923203,
+    "calls": 1
+   },
+   {
+    "name": "rot_021",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1086244689504383e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_022",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.614792964729597,
+    "calls": 1
+   },
+   {
+    "name": "rot_023",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_024",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6164162842846244,
+    "calls": 1
+   },
+   {
+    "name": "rot_025",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_026",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.620207670970081,
+    "calls": 1
+   },
+   {
+    "name": "rot_027",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_028",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6205088307058393,
+    "calls": 1
+   },
+   {
+    "name": "rot_029",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_030",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.927442948096896,
+    "calls": 1
+   },
+   {
+    "name": "rot_031",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_032",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.7535990490231,
+    "calls": 1
+   },
+   {
+    "name": "rot_033",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_034",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.7646604384088445,
+    "calls": 1
+   },
+   {
+    "name": "rot_035",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": -0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_036",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.0132991091575096,
+    "calls": 1
+   },
+   {
+    "name": "rot_037",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.2212453270876722e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_038",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.584574523706968,
+    "calls": 1
+   },
+   {
+    "name": "rot_039",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_040",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.856738953748085,
+    "calls": 1
+   },
+   {
+    "name": "rot_041",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_042",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.0850794387105704,
+    "calls": 1
+   },
+   {
+    "name": "rot_043",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_044",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179577,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    0.7041707784666685,
+    -0.42954267301741866
+   ],
+   "dev_vs_build": 1.8416680745278187e-12,
+   "dev_vs_polynomial": 1.0092678496034531e-11,
+   "unrolled_vs_piecewise": 2.8780732729788923e-14,
+   "cx_unrolled": 286242
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "n08",
+     "M_build"
+    ]
+   }
+  }
+ },
+ {
+  "description": "GQSP Hadamard test, n = 9 (T = n dt = 0.06748532 MeV^-1, dt = 0.99 pi/(E_max - E0) = 0.007498369 MeV^-1)",
+  "family": "GQSP Hadamard test",
+  "T": 0.0674853247775083,
+  "tau": 15.506700520675054,
+  "d": 24,
+  "n_controlled_walks": 48,
+  "dt": 0.007498369419723144,
+  "n": 9,
+  "build_cx": 312264,
+  "build_cx_source": "qkrylov_he4.json rows[8]",
+  "paper": "Fig. 15 (a), real-time route with overlaps from qubitized evolution (first 14 time steps)",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#n09",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_n09.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 312264,
+  "u": 422718,
+  "depth": 591192,
+  "bytes": 951016,
+  "bytes_uncompressed": 951016,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 24
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 24
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.9317880628477724e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.747597931305037,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6155634564092027,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179576,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.767208647319129,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.021405182655144e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.747138237855687,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 7.993605777301127e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.623630533014608,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795765,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6064474760738419,
+    "calls": 1
+   },
+   {
+    "name": "rot_013",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 9.103828801926284e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_014",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.758653450088964,
+    "calls": 1
+   },
+   {
+    "name": "rot_015",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_016",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.831892821199656,
+    "calls": 1
+   },
+   {
+    "name": "rot_017",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.28318530717958,
+    "calls": 1
+   },
+   {
+    "name": "rot_018",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.084527716594813,
+    "calls": 1
+   },
+   {
+    "name": "rot_019",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179579,
+    "calls": 1
+   },
+   {
+    "name": "rot_020",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.141841305058993,
+    "calls": 1
+   },
+   {
+    "name": "rot_021",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.884981308350689e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_022",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.984242197292107,
+    "calls": 1
+   },
+   {
+    "name": "rot_023",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.884981308350689e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_024",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.936305950191949,
+    "calls": 1
+   },
+   {
+    "name": "rot_025",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179585,
+    "calls": 1
+   },
+   {
+    "name": "rot_026",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6081709861775044,
+    "calls": 1
+   },
+   {
+    "name": "rot_027",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1086244689504383e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_028",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.141841305058998,
+    "calls": 1
+   },
+   {
+    "name": "rot_029",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.220446049250313e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_030",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.08452771659481,
+    "calls": 1
+   },
+   {
+    "name": "rot_031",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_032",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.831892821199656,
+    "calls": 1
+   },
+   {
+    "name": "rot_033",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_034",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.872745304141663,
+    "calls": 1
+   },
+   {
+    "name": "rot_035",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": -0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_036",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6064474760738463,
+    "calls": 1
+   },
+   {
+    "name": "rot_037",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_038",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6236305330146088,
+    "calls": 1
+   },
+   {
+    "name": "rot_039",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_040",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.747138237855687,
+    "calls": 1
+   },
+   {
+    "name": "rot_041",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.6645352591003757e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_042",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.70624936366199,
+    "calls": 1
+   },
+   {
+    "name": "rot_043",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_044",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.76523735249979,
+    "calls": 1
+   },
+   {
+    "name": "rot_045",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_046",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.234481615353388,
+    "calls": 1
+   },
+   {
+    "name": "rot_047",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_048",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.375877272697835e-14,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    0.43059016860211513,
+    0.7578632688353696
+   ],
+   "dev_vs_build": 2.0960537237675048e-12,
+   "dev_vs_polynomial": 1.0338242876367095e-11,
+   "unrolled_vs_piecewise": 2.427602749857883e-14,
+   "cx_unrolled": 312264
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "n09",
+     "M_build"
+    ]
+   }
+  }
+ },
+ {
+  "description": "GQSP Hadamard test, n = 10 (T = n dt = 0.07498369 MeV^-1, dt = 0.99 pi/(E_max - E0) = 0.007498369 MeV^-1)",
+  "family": "GQSP Hadamard test",
+  "T": 0.07498369419723144,
+  "tau": 17.229667245194506,
+  "d": 26,
+  "n_controlled_walks": 52,
+  "dt": 0.007498369419723144,
+  "n": 10,
+  "build_cx": 338286,
+  "build_cx_source": "qkrylov_he4.json rows[9]",
+  "paper": "Fig. 15 (a), real-time route with overlaps from qubitized evolution (first 14 time steps)",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#n10",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_n10.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 338286,
+  "u": 457944,
+  "depth": 640456,
+  "bytes": 952895,
+  "bytes_uncompressed": 952895,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 26
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 26
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.141592653589751,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.099955622761313,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179582,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.950194900191528,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.554312234475219e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6260730696727155,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179573,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.747093298685968,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 5.329070518200751e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.763513952671043,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6059119877221022,
+    "calls": 1
+   },
+   {
+    "name": "rot_013",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_014",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.662838121812735,
+    "calls": 1
+   },
+   {
+    "name": "rot_015",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179579,
+    "calls": 1
+   },
+   {
+    "name": "rot_016",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.877794042491688,
+    "calls": 1
+   },
+   {
+    "name": "rot_017",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179575,
+    "calls": 1
+   },
+   {
+    "name": "rot_018",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.191286582486441,
+    "calls": 1
+   },
+   {
+    "name": "rot_019",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.43769498715119e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_020",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.756422451340123,
+    "calls": 1
+   },
+   {
+    "name": "rot_021",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179585,
+    "calls": 1
+   },
+   {
+    "name": "rot_022",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.843500555362326,
+    "calls": 1
+   },
+   {
+    "name": "rot_023",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_024",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.759921172162544,
+    "calls": 1
+   },
+   {
+    "name": "rot_025",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.6645352591003757e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_026",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.854385930499392,
+    "calls": 1
+   },
+   {
+    "name": "rot_027",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_028",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.845355341197937,
+    "calls": 1
+   },
+   {
+    "name": "rot_029",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_030",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.843500555362326,
+    "calls": 1
+   },
+   {
+    "name": "rot_031",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_032",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.7564224513401285,
+    "calls": 1
+   },
+   {
+    "name": "rot_033",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.6645352591003757e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_034",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.191286582486404,
+    "calls": 1
+   },
+   {
+    "name": "rot_035",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_036",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.8777940424917325,
+    "calls": 1
+   },
+   {
+    "name": "rot_037",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_038",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.620327495569434,
+    "calls": 1
+   },
+   {
+    "name": "rot_039",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.1102230246251565e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_040",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6059119877221022,
+    "calls": 1
+   },
+   {
+    "name": "rot_041",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179585,
+    "calls": 1
+   },
+   {
+    "name": "rot_042",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.773471975679546,
+    "calls": 1
+   },
+   {
+    "name": "rot_043",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.5543122344752192e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_044",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.7470932986859715,
+    "calls": 1
+   },
+   {
+    "name": "rot_045",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_046",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.556714932827666,
+    "calls": 1
+   },
+   {
+    "name": "rot_047",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_048",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.950194900191569,
+    "calls": 1
+   },
+   {
+    "name": "rot_049",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.3322676295501878e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_050",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6059000473857479,
+    "calls": 1
+   },
+   {
+    "name": "rot_051",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_052",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795765,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    -0.799122234555255,
+    0.544992360216422
+   ],
+   "dev_vs_build": 2.529830513637529e-12,
+   "dev_vs_polynomial": 7.755376595570214e-12,
+   "unrolled_vs_piecewise": 2.3820170696950447e-14,
+   "cx_unrolled": 338286
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "n10",
+     "M_build"
+    ]
+   }
+  }
+ },
+ {
+  "description": "GQSP Hadamard test, n = 11 (T = n dt = 0.08248206 MeV^-1, dt = 0.99 pi/(E_max - E0) = 0.007498369 MeV^-1)",
+  "family": "GQSP Hadamard test",
+  "T": 0.08248206361695458,
+  "tau": 18.952633969713954,
+  "d": 28,
+  "n_controlled_walks": 56,
+  "dt": 0.007498369419723144,
+  "n": 11,
+  "build_cx": 364308,
+  "build_cx_source": "qkrylov_he4.json rows[10]",
+  "paper": "Fig. 15 (a), real-time route with overlaps from qubitized evolution (first 14 time steps)",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#n11",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_n11.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 364308,
+  "u": 493170,
+  "depth": 689720,
+  "bytes": 954781,
+  "bytes_uncompressed": 954781,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 28
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 28
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.141592653589623,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.74740930506046,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.773959005888173e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.8442646113217886,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.4654943925052066e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.76756402794233,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179572,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.0533875449099677,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.619109478886683,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.28318530717957,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.750541801368272,
+    "calls": 1
+   },
+   {
+    "name": "rot_013",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_014",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.7607135770317806,
+    "calls": 1
+   },
+   {
+    "name": "rot_015",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179574,
+    "calls": 1
+   },
+   {
+    "name": "rot_016",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.747345711490339,
+    "calls": 1
+   },
+   {
+    "name": "rot_017",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795765,
+    "calls": 1
+   },
+   {
+    "name": "rot_018",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.807732419007552,
+    "calls": 1
+   },
+   {
+    "name": "rot_019",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_020",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6181142533289057,
+    "calls": 1
+   },
+   {
+    "name": "rot_021",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.884981308350689e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_022",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.828072502897612,
+    "calls": 1
+   },
+   {
+    "name": "rot_023",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 7.105427357601002e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_024",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.9972364171417993,
+    "calls": 1
+   },
+   {
+    "name": "rot_025",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179581,
+    "calls": 1
+   },
+   {
+    "name": "rot_026",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.1190058532962426,
+    "calls": 1
+   },
+   {
+    "name": "rot_027",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179581,
+    "calls": 1
+   },
+   {
+    "name": "rot_028",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.161013610046716,
+    "calls": 1
+   },
+   {
+    "name": "rot_029",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_030",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.1190058532962457,
+    "calls": 1
+   },
+   {
+    "name": "rot_031",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179584,
+    "calls": 1
+   },
+   {
+    "name": "rot_032",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.607858227766875,
+    "calls": 1
+   },
+   {
+    "name": "rot_033",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.3322676295501878e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_034",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6130418728450113,
+    "calls": 1
+   },
+   {
+    "name": "rot_035",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_036",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.618114253328903,
+    "calls": 1
+   },
+   {
+    "name": "rot_037",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_038",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.807732419007557,
+    "calls": 1
+   },
+   {
+    "name": "rot_039",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": -0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_040",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.747345711490338,
+    "calls": 1
+   },
+   {
+    "name": "rot_041",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_042",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.8288260592784065,
+    "calls": 1
+   },
+   {
+    "name": "rot_043",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_044",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.750541801368272,
+    "calls": 1
+   },
+   {
+    "name": "rot_045",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_046",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.619109478886684,
+    "calls": 1
+   },
+   {
+    "name": "rot_047",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_048",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.0533875449099863,
+    "calls": 1
+   },
+   {
+    "name": "rot_049",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_050",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.700068174155081,
+    "calls": 1
+   },
+   {
+    "name": "rot_051",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.1102230246251565e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_052",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.8442646113217753,
+    "calls": 1
+   },
+   {
+    "name": "rot_053",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.4432899320127035e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_054",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.74740930506046,
+    "calls": 1
+   },
+   {
+    "name": "rot_055",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_056",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1415926535898047,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    -0.6868562133918148,
+    -0.7228970753765579
+   ],
+   "dev_vs_build": 2.8639907801017635e-12,
+   "dev_vs_polynomial": 6.6967247253686985e-12,
+   "unrolled_vs_piecewise": 2.5879451115132833e-14,
+   "cx_unrolled": 364308
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "n11",
+     "M_build"
+    ]
+   }
+  }
+ },
+ {
+  "description": "GQSP Hadamard test, n = 12 (T = n dt = 0.08998043 MeV^-1, dt = 0.99 pi/(E_max - E0) = 0.007498369 MeV^-1)",
+  "family": "GQSP Hadamard test",
+  "T": 0.08998043303667773,
+  "tau": 20.675600694233406,
+  "d": 30,
+  "n_controlled_walks": 60,
+  "dt": 0.007498369419723144,
+  "n": 12,
+  "build_cx": 390330,
+  "build_cx_source": "qkrylov_he4.json rows[11]",
+  "paper": "Fig. 15 (a), real-time route with overlaps from qubitized evolution (first 14 time steps)",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#n12",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_n12.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 390330,
+  "u": 528396,
+  "depth": 738984,
+  "bytes": 956652,
+  "bytes_uncompressed": 956652,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 30
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 30
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179413,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.3306690738754696e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.1106311846660186,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179583,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.015307662939123,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179567,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.625491381549999,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179564,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.132274772895638,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.3322676295501878e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.894579938382197,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.7977620220553945e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.612320428748494,
+    "calls": 1
+   },
+   {
+    "name": "rot_013",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1086244689504383e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_014",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.615512319645446,
+    "calls": 1
+   },
+   {
+    "name": "rot_015",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179564,
+    "calls": 1
+   },
+   {
+    "name": "rot_016",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.175449083413419,
+    "calls": 1
+   },
+   {
+    "name": "rot_017",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 9.325873406851315e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_018",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.759435491694248,
+    "calls": 1
+   },
+   {
+    "name": "rot_019",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 9.769962616701378e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_020",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.979712617518431,
+    "calls": 1
+   },
+   {
+    "name": "rot_021",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.28318530717957,
+    "calls": 1
+   },
+   {
+    "name": "rot_022",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 0.0033915163534272708,
+    "calls": 1
+   },
+   {
+    "name": "rot_023",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.3766765505351941e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_024",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.950918952208987,
+    "calls": 1
+   },
+   {
+    "name": "rot_025",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179579,
+    "calls": 1
+   },
+   {
+    "name": "rot_026",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.817089267535062,
+    "calls": 1
+   },
+   {
+    "name": "rot_027",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179583,
+    "calls": 1
+   },
+   {
+    "name": "rot_028",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.766698239759359,
+    "calls": 1
+   },
+   {
+    "name": "rot_029",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.220446049250313e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_030",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.755390711869355,
+    "calls": 1
+   },
+   {
+    "name": "rot_031",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.552713678800501e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_032",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6155012928695225,
+    "calls": 1
+   },
+   {
+    "name": "rot_033",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.6637359812630166e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_034",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.8170892675350583,
+    "calls": 1
+   },
+   {
+    "name": "rot_035",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179583,
+    "calls": 1
+   },
+   {
+    "name": "rot_036",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.609038928140368,
+    "calls": 1
+   },
+   {
+    "name": "rot_037",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.9968028886505635e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_038",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 0.0033915163534468107,
+    "calls": 1
+   },
+   {
+    "name": "rot_039",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_040",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.979712617518452,
+    "calls": 1
+   },
+   {
+    "name": "rot_041",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_042",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.759435491694249,
+    "calls": 1
+   },
+   {
+    "name": "rot_043",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179585,
+    "calls": 1
+   },
+   {
+    "name": "rot_044",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.175449083413392,
+    "calls": 1
+   },
+   {
+    "name": "rot_045",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_046",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.766438816836498,
+    "calls": 1
+   },
+   {
+    "name": "rot_047",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_048",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6123204287484958,
+    "calls": 1
+   },
+   {
+    "name": "rot_049",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179584,
+    "calls": 1
+   },
+   {
+    "name": "rot_050",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.757683912400572,
+    "calls": 1
+   },
+   {
+    "name": "rot_051",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_052",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.132274772895616,
+    "calls": 1
+   },
+   {
+    "name": "rot_053",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.220446049250313e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_054",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.625491381549998,
+    "calls": 1
+   },
+   {
+    "name": "rot_055",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_056",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.753001776867166,
+    "calls": 1
+   },
+   {
+    "name": "rot_057",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_058",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.11063118466602,
+    "calls": 1
+   },
+   {
+    "name": "rot_059",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_060",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179576,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    0.5785885812530691,
+    -0.7271254204298442
+   ],
+   "dev_vs_build": 2.8665979844602582e-12,
+   "dev_vs_polynomial": 9.53936066574622e-12,
+   "unrolled_vs_piecewise": 4.241371639748931e-14,
+   "cx_unrolled": 390330
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "n12",
+     "M_build"
+    ]
+   }
+  }
+ },
+ {
+  "description": "GQSP Hadamard test, n = 13 (T = n dt = 0.0974788 MeV^-1, dt = 0.99 pi/(E_max - E0) = 0.007498369 MeV^-1)",
+  "family": "GQSP Hadamard test",
+  "T": 0.09747880245640086,
+  "tau": 22.398567418752855,
+  "d": 32,
+  "n_controlled_walks": 64,
+  "dt": 0.007498369419723144,
+  "n": 13,
+  "build_cx": 416352,
+  "build_cx_source": "qkrylov_he4.json rows[12]",
+  "paper": "Fig. 15 (a), real-time route with overlaps from qubitized evolution (first 14 time steps)",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#n13",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_n13.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 416352,
+  "u": 563622,
+  "depth": 788248,
+  "bytes": 958549,
+  "bytes_uncompressed": 958549,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 32
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 32
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.141592653589612,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.257038579248437,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179583,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.9011271531371587,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179566,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.721572169332742,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795605,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.9341561227769244,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.8247621152372133,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.7533531010703882e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.756989749177629,
+    "calls": 1
+   },
+   {
+    "name": "rot_013",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179575,
+    "calls": 1
+   },
+   {
+    "name": "rot_014",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.018601586063876,
+    "calls": 1
+   },
+   {
+    "name": "rot_015",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.6645352591003757e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_016",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.8747107608117837,
+    "calls": 1
+   },
+   {
+    "name": "rot_017",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_018",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.7391397128834534,
+    "calls": 1
+   },
+   {
+    "name": "rot_019",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.9095836023552692e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_020",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6063701321862895,
+    "calls": 1
+   },
+   {
+    "name": "rot_021",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.28318530717957,
+    "calls": 1
+   },
+   {
+    "name": "rot_022",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.053894193148059,
+    "calls": 1
+   },
+   {
+    "name": "rot_023",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179581,
+    "calls": 1
+   },
+   {
+    "name": "rot_024",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.893911572568623,
+    "calls": 1
+   },
+   {
+    "name": "rot_025",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1086244689504383e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_026",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.757208142597352,
+    "calls": 1
+   },
+   {
+    "name": "rot_027",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.43769498715119e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_028",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.754071919990713,
+    "calls": 1
+   },
+   {
+    "name": "rot_029",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795765,
+    "calls": 1
+   },
+   {
+    "name": "rot_030",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.751677329535916,
+    "calls": 1
+   },
+   {
+    "name": "rot_031",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 9.325873406851315e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_032",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.750880405217584,
+    "calls": 1
+   },
+   {
+    "name": "rot_033",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.28318530717958,
+    "calls": 1
+   },
+   {
+    "name": "rot_034",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.751677329535916,
+    "calls": 1
+   },
+   {
+    "name": "rot_035",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.884981308350689e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_036",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.98486638967335,
+    "calls": 1
+   },
+   {
+    "name": "rot_037",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_038",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.757208142597352,
+    "calls": 1
+   },
+   {
+    "name": "rot_039",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_040",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.893911572568616,
+    "calls": 1
+   },
+   {
+    "name": "rot_041",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.220446049250313e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_042",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.053894193148034,
+    "calls": 1
+   },
+   {
+    "name": "rot_043",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1086244689504383e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_044",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6063701321862895,
+    "calls": 1
+   },
+   {
+    "name": "rot_045",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_046",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.7391397128834765,
+    "calls": 1
+   },
+   {
+    "name": "rot_047",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_048",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6113754001471916,
+    "calls": 1
+   },
+   {
+    "name": "rot_049",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.3306690738754696e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_050",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.018601586063928,
+    "calls": 1
+   },
+   {
+    "name": "rot_051",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.886579864025407e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_052",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.910748439872188,
+    "calls": 1
+   },
+   {
+    "name": "rot_053",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_054",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6131668658609177,
+    "calls": 1
+   },
+   {
+    "name": "rot_055",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_056",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6095111380844562,
+    "calls": 1
+   },
+   {
+    "name": "rot_057",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.3322676295501878e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_058",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.7215721693327515,
+    "calls": 1
+   },
+   {
+    "name": "rot_059",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_060",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6105106501680257,
+    "calls": 1
+   },
+   {
+    "name": "rot_061",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_062",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.747277391893513,
+    "calls": 1
+   },
+   {
+    "name": "rot_063",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.3322676295501878e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_064",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1415926535898064,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    0.6713677810893861,
+    0.5032497713345954
+   ],
+   "dev_vs_build": 2.7448229839837717e-12,
+   "dev_vs_polynomial": 1.1872912813917855e-11,
+   "unrolled_vs_piecewise": 4.295801578393286e-14,
+   "cx_unrolled": 416352
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "n13",
+     "M_build"
+    ]
+   }
+  }
+ },
+ {
+  "description": "GQSP Hadamard test, n = 14 (T = n dt = 0.1049772 MeV^-1, dt = 0.99 pi/(E_max - E0) = 0.007498369 MeV^-1)",
+  "family": "GQSP Hadamard test",
+  "T": 0.10497717187612401,
+  "tau": 24.121534143272306,
+  "d": 34,
+  "n_controlled_walks": 68,
+  "dt": 0.007498369419723144,
+  "n": 14,
+  "build_cx": 442374,
+  "build_cx_source": "qkrylov_he4.json rows[13]",
+  "paper": "Fig. 15 (a), real-time route with overlaps from qubitized evolution (first 14 time steps)",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#n14",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_n14.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 442374,
+  "u": 598848,
+  "depth": 837512,
+  "bytes": 960399,
+  "bytes_uncompressed": 960399,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 34
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 34
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179401,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.1193272418813027,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179581,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.751420776284819,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.4424906541753444e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6238386222968817,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179555,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.752518662091653,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 5.773159728050814e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.0334960169075895,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.108624468950438e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.720762565304973,
+    "calls": 1
+   },
+   {
+    "name": "rot_013",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.9984014443252818e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_014",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.991538136140834,
+    "calls": 1
+   },
+   {
+    "name": "rot_015",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.28318530717956,
+    "calls": 1
+   },
+   {
+    "name": "rot_016",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.756664184746992,
+    "calls": 1
+   },
+   {
+    "name": "rot_017",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.0658141036401503e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_018",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.754196221260894,
+    "calls": 1
+   },
+   {
+    "name": "rot_019",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.28318530717956,
+    "calls": 1
+   },
+   {
+    "name": "rot_020",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.606659451366367,
+    "calls": 1
+   },
+   {
+    "name": "rot_021",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.4654943925052066e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_022",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.766015205702489,
+    "calls": 1
+   },
+   {
+    "name": "rot_023",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179582,
+    "calls": 1
+   },
+   {
+    "name": "rot_024",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6143776844232383,
+    "calls": 1
+   },
+   {
+    "name": "rot_025",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.687538997430238e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_026",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6080200673386562,
+    "calls": 1
+   },
+   {
+    "name": "rot_027",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.28318530717957,
+    "calls": 1
+   },
+   {
+    "name": "rot_028",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.746885399465938,
+    "calls": 1
+   },
+   {
+    "name": "rot_029",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179573,
+    "calls": 1
+   },
+   {
+    "name": "rot_030",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.14236334773905,
+    "calls": 1
+   },
+   {
+    "name": "rot_031",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.021405182655144e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_032",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.065522068975039,
+    "calls": 1
+   },
+   {
+    "name": "rot_033",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179579,
+    "calls": 1
+   },
+   {
+    "name": "rot_034",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.752106135613874,
+    "calls": 1
+   },
+   {
+    "name": "rot_035",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 7.105427357601002e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_036",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.751403504752945,
+    "calls": 1
+   },
+   {
+    "name": "rot_037",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.28318530717958,
+    "calls": 1
+   },
+   {
+    "name": "rot_038",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.749368320494696,
+    "calls": 1
+   },
+   {
+    "name": "rot_039",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 7.105427357601002e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_040",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 0.007226876241862357,
+    "calls": 1
+   },
+   {
+    "name": "rot_041",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.661338147750939e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_042",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6080200673386544,
+    "calls": 1
+   },
+   {
+    "name": "rot_043",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.9968028886505635e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_044",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.614377684423233,
+    "calls": 1
+   },
+   {
+    "name": "rot_045",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_046",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.766015205702475,
+    "calls": 1
+   },
+   {
+    "name": "rot_047",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179584,
+    "calls": 1
+   },
+   {
+    "name": "rot_048",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.054171677732228,
+    "calls": 1
+   },
+   {
+    "name": "rot_049",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.552713678800501e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_050",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.754196221260891,
+    "calls": 1
+   },
+   {
+    "name": "rot_051",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_052",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.918500081929512,
+    "calls": 1
+   },
+   {
+    "name": "rot_053",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_054",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.9915381361409423,
+    "calls": 1
+   },
+   {
+    "name": "rot_055",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.220446049250313e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_056",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6175349891980524,
+    "calls": 1
+   },
+   {
+    "name": "rot_057",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.3322676295501878e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_058",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.752398684919178,
+    "calls": 1
+   },
+   {
+    "name": "rot_059",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_060",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.029811104875224,
+    "calls": 1
+   },
+   {
+    "name": "rot_061",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_062",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.596281101135663,
+    "calls": 1
+   },
+   {
+    "name": "rot_063",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_064",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.064941720826568,
+    "calls": 1
+   },
+   {
+    "name": "rot_065",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_066",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6056340991416986,
+    "calls": 1
+   },
+   {
+    "name": "rot_067",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_068",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.141592653589854,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    -0.5352585134219158,
+    0.6486754098115696
+   ],
+   "dev_vs_build": 2.876632584603644e-12,
+   "dev_vs_polynomial": 1.1784078393287545e-11,
+   "unrolled_vs_piecewise": 3.671933891414001e-14,
+   "cx_unrolled": 442374
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "n14",
+     "M_build"
+    ]
+   }
+  }
+ },
+ {
+  "description": "GQSP Hadamard test, T = 0.05 MeV^-1 (check run of run_qkrylov.py; the same circuit as a3b_gqsp.py T = 0.05)",
+  "family": "GQSP Hadamard test",
+  "T": 0.05,
+  "tau": 11.48894264923444,
+  "d": 19,
+  "n_controlled_walks": 38,
+  "dt": null,
+  "n": null,
+  "build_cx": 247210,
+  "build_cx_source": "qkrylov_he4.json check_T005; a3b results_a3b.json runs.T0.05.hadamard_version_cx",
+  "paper": "Table VII, qubitized evolution T = 0.05 row: 2.47 x 10^5",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#T0.05",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_T0.05.qasm",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 247210,
+  "u": 334655,
+  "depth": 468032,
+  "bytes": 946469,
+  "bytes_uncompressed": 946469,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 19
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 19
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.5707963267949112,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.272314461330901,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6116315809158595,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 5.329070518200751e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.612416498009412,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 7.105427357601002e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.1478646073035,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6264216206223256,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 5.773159728050814e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6091217575607346,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179581,
+    "calls": 1
+   },
+   {
+    "name": "rot_013",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.7534695428405325,
+    "calls": 1
+   },
+   {
+    "name": "rot_014",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179584,
+    "calls": 1
+   },
+   {
+    "name": "rot_015",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.778504609111556,
+    "calls": 1
+   },
+   {
+    "name": "rot_016",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 9.992007221626409e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_017",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.75712019062494,
+    "calls": 1
+   },
+   {
+    "name": "rot_018",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.3322676295501878e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_019",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.768494880300794,
+    "calls": 1
+   },
+   {
+    "name": "rot_020",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_021",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.7571201906249385,
+    "calls": 1
+   },
+   {
+    "name": "rot_022",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_023",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.763250155368127,
+    "calls": 1
+   },
+   {
+    "name": "rot_024",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_025",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.753469542840534,
+    "calls": 1
+   },
+   {
+    "name": "rot_026",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": -0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_027",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6091217575607337,
+    "calls": 1
+   },
+   {
+    "name": "rot_028",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_029",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.550707863586961,
+    "calls": 1
+   },
+   {
+    "name": "rot_030",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_031",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.147864607303486,
+    "calls": 1
+   },
+   {
+    "name": "rot_032",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": -0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_033",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.772874246765143,
+    "calls": 1
+   },
+   {
+    "name": "rot_034",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_035",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.8672057180223476,
+    "calls": 1
+   },
+   {
+    "name": "rot_036",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_037",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.74708576277817,
+    "calls": 1
+   },
+   {
+    "name": "rot_038",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.570796326794879,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    -0.8064531177676805,
+    -0.4482267644210122
+   ],
+   "dev_vs_build": 1.8029115978407938e-12,
+   "dev_vs_polynomial": 5.310546021505443e-12,
+   "unrolled_vs_piecewise": 2.5959129175061547e-14,
+   "cx_unrolled": 247210
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "T0.05",
+     "M_build"
+    ]
+   }
+  },
+  "paper_cx_approx": 247000.0
+ },
+ {
+  "description": "GQSP Hadamard test, T = 0.3 MeV^-1 (a3b_gqsp.py: Jacobi-Anger degree d = 82 without raise; written piecewise as run_qkrylov.py)",
+  "family": "GQSP Hadamard test",
+  "T": 0.3,
+  "tau": 68.93365589540663,
+  "d": 82,
+  "n_controlled_walks": 164,
+  "dt": null,
+  "n": null,
+  "build_cx": 1066902,
+  "build_cx_source": "results_a3b.json runs.T0.3.hadamard_version_cx (whole-circuit transpile)",
+  "paper": "Table VII, qubitized evolution T = 0.3 row: 1.07 x 10^6",
+  "alpha": 229.7788529846888,
+  "c": 55.4699190490449,
+  "global_phase_matters": "no (explicit test qubit)",
+  "reference": "data/he4_L3_sym/gqsp_overlaps.json#T0.3",
+  "file": "circuits/he4_L3_sym/gqsp_hadamard_T0.3.qasm.gz",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 15,
+  "cx": 1066902,
+  "u": 1444272,
+  "depth": 2019848,
+  "bytes": 275195,
+  "bytes_uncompressed": 1005455,
+  "pieces": [
+   {
+    "name": "h_test",
+    "qubits": 15,
+    "cx": 0,
+    "u": 1,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "sig_s",
+    "qubits": 15,
+    "cx": 6503,
+    "u": 8799,
+    "global_phase": 6.177438027921136,
+    "calls": 82
+   },
+   {
+    "name": "sig_i",
+    "qubits": 15,
+    "cx": 6505,
+    "u": 8804,
+    "global_phase": 5.313061536106959,
+    "calls": 82
+   },
+   {
+    "name": "rot_000",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179388,
+    "calls": 1
+   },
+   {
+    "name": "rot_001",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.6653345369377348e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_002",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.605343064251235,
+    "calls": 1
+   },
+   {
+    "name": "rot_003",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179582,
+    "calls": 1
+   },
+   {
+    "name": "rot_004",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.74780625529944,
+    "calls": 1
+   },
+   {
+    "name": "rot_005",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179571,
+    "calls": 1
+   },
+   {
+    "name": "rot_006",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.9304170430045398,
+    "calls": 1
+   },
+   {
+    "name": "rot_007",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179551,
+    "calls": 1
+   },
+   {
+    "name": "rot_008",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.906716874232561,
+    "calls": 1
+   },
+   {
+    "name": "rot_009",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179541,
+    "calls": 1
+   },
+   {
+    "name": "rot_010",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.8667463445858985,
+    "calls": 1
+   },
+   {
+    "name": "rot_011",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179561,
+    "calls": 1
+   },
+   {
+    "name": "rot_012",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.28142529306049,
+    "calls": 1
+   },
+   {
+    "name": "rot_013",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.0658141036401503e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_014",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.076531589360542,
+    "calls": 1
+   },
+   {
+    "name": "rot_015",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.574118861455645e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_016",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6128433192598015,
+    "calls": 1
+   },
+   {
+    "name": "rot_017",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.952393967665557e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_018",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.223635014867206,
+    "calls": 1
+   },
+   {
+    "name": "rot_019",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179583,
+    "calls": 1
+   },
+   {
+    "name": "rot_020",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.076990813641933,
+    "calls": 1
+   },
+   {
+    "name": "rot_021",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.929390229335695e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_022",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6104906777051804,
+    "calls": 1
+   },
+   {
+    "name": "rot_023",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179557,
+    "calls": 1
+   },
+   {
+    "name": "rot_024",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.0988237819415203,
+    "calls": 1
+   },
+   {
+    "name": "rot_025",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179555,
+    "calls": 1
+   },
+   {
+    "name": "rot_026",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.7529590093174345,
+    "calls": 1
+   },
+   {
+    "name": "rot_027",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179545,
+    "calls": 1
+   },
+   {
+    "name": "rot_028",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6051255912396494,
+    "calls": 1
+   },
+   {
+    "name": "rot_029",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.353672812205332e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_030",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.8865521831904815,
+    "calls": 1
+   },
+   {
+    "name": "rot_031",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179547,
+    "calls": 1
+   },
+   {
+    "name": "rot_032",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.746704179080432,
+    "calls": 1
+   },
+   {
+    "name": "rot_033",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179562,
+    "calls": 1
+   },
+   {
+    "name": "rot_034",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.037767251587827,
+    "calls": 1
+   },
+   {
+    "name": "rot_035",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.108624468950438e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_036",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.747425670478506,
+    "calls": 1
+   },
+   {
+    "name": "rot_037",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179554,
+    "calls": 1
+   },
+   {
+    "name": "rot_038",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.9365461348096566,
+    "calls": 1
+   },
+   {
+    "name": "rot_039",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.1546319456101628e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_040",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6083043997074302,
+    "calls": 1
+   },
+   {
+    "name": "rot_041",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.3306690738754696e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_042",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.218384322993613,
+    "calls": 1
+   },
+   {
+    "name": "rot_043",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179572,
+    "calls": 1
+   },
+   {
+    "name": "rot_044",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.053591514901675,
+    "calls": 1
+   },
+   {
+    "name": "rot_045",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7208456881689926e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_046",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.748638593019713,
+    "calls": 1
+   },
+   {
+    "name": "rot_047",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179559,
+    "calls": 1
+   },
+   {
+    "name": "rot_048",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6064630958786523,
+    "calls": 1
+   },
+   {
+    "name": "rot_049",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.4654943925052066e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_050",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6098517131439483,
+    "calls": 1
+   },
+   {
+    "name": "rot_051",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.43769498715119e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_052",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6083240764243065,
+    "calls": 1
+   },
+   {
+    "name": "rot_053",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 2.1316282072803006e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_054",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6051696646050715,
+    "calls": 1
+   },
+   {
+    "name": "rot_055",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.9095836023552692e-14,
+    "calls": 1
+   },
+   {
+    "name": "rot_056",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.74914571022892,
+    "calls": 1
+   },
+   {
+    "name": "rot_057",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.43769498715119e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_058",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.068910754053268,
+    "calls": 1
+   },
+   {
+    "name": "rot_059",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179583,
+    "calls": 1
+   },
+   {
+    "name": "rot_060",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.095727540347606,
+    "calls": 1
+   },
+   {
+    "name": "rot_061",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179573,
+    "calls": 1
+   },
+   {
+    "name": "rot_062",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.198117940113704,
+    "calls": 1
+   },
+   {
+    "name": "rot_063",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.28318530717957,
+    "calls": 1
+   },
+   {
+    "name": "rot_064",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.166480333189278,
+    "calls": 1
+   },
+   {
+    "name": "rot_065",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179572,
+    "calls": 1
+   },
+   {
+    "name": "rot_066",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.0535414224438355,
+    "calls": 1
+   },
+   {
+    "name": "rot_067",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179576,
+    "calls": 1
+   },
+   {
+    "name": "rot_068",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.977263759269567,
+    "calls": 1
+   },
+   {
+    "name": "rot_069",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 7.105427357601002e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_070",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.938951032636437,
+    "calls": 1
+   },
+   {
+    "name": "rot_071",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 5.551115123125783e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_072",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6096267270993803,
+    "calls": 1
+   },
+   {
+    "name": "rot_073",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179583,
+    "calls": 1
+   },
+   {
+    "name": "rot_074",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.939607497334979,
+    "calls": 1
+   },
+   {
+    "name": "rot_075",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179582,
+    "calls": 1
+   },
+   {
+    "name": "rot_076",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.95689972865485,
+    "calls": 1
+   },
+   {
+    "name": "rot_077",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.661338147750939e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_078",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.9742179569862834,
+    "calls": 1
+   },
+   {
+    "name": "rot_079",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 7.105427357601002e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_080",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.986469651629548,
+    "calls": 1
+   },
+   {
+    "name": "rot_081",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179579,
+    "calls": 1
+   },
+   {
+    "name": "rot_082",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6080094866200962,
+    "calls": 1
+   },
+   {
+    "name": "rot_083",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 7.105427357601002e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_084",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.986469651629548,
+    "calls": 1
+   },
+   {
+    "name": "rot_085",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.661338147750939e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_086",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6084221325989665,
+    "calls": 1
+   },
+   {
+    "name": "rot_087",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179583,
+    "calls": 1
+   },
+   {
+    "name": "rot_088",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6088762003926824,
+    "calls": 1
+   },
+   {
+    "name": "rot_089",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_090",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.939607497334981,
+    "calls": 1
+   },
+   {
+    "name": "rot_091",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.3322676295501878e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_092",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.930176388175324,
+    "calls": 1
+   },
+   {
+    "name": "rot_093",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_094",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6093736438377242,
+    "calls": 1
+   },
+   {
+    "name": "rot_095",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_096",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.977263759269567,
+    "calls": 1
+   },
+   {
+    "name": "rot_097",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179582,
+    "calls": 1
+   },
+   {
+    "name": "rot_098",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.0535414224438338,
+    "calls": 1
+   },
+   {
+    "name": "rot_099",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179582,
+    "calls": 1
+   },
+   {
+    "name": "rot_100",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6051251606036274,
+    "calls": 1
+   },
+   {
+    "name": "rot_101",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179583,
+    "calls": 1
+   },
+   {
+    "name": "rot_102",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.748208600404816,
+    "calls": 1
+   },
+   {
+    "name": "rot_103",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_104",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.0957275403476086,
+    "calls": 1
+   },
+   {
+    "name": "rot_105",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.3306690738754696e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_106",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.751303219555806,
+    "calls": 1
+   },
+   {
+    "name": "rot_107",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_108",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.152132094227813,
+    "calls": 1
+   },
+   {
+    "name": "rot_109",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.2831853071795845,
+    "calls": 1
+   },
+   {
+    "name": "rot_110",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6051696646050742,
+    "calls": 1
+   },
+   {
+    "name": "rot_111",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 6.283185307179585,
+    "calls": 1
+   },
+   {
+    "name": "rot_112",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.9780911546198627,
+    "calls": 1
+   },
+   {
+    "name": "rot_113",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_114",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.9225579230801735,
+    "calls": 1
+   },
+   {
+    "name": "rot_115",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_116",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.065011485600138,
+    "calls": 1
+   },
+   {
+    "name": "rot_117",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_118",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.175894187774578,
+    "calls": 1
+   },
+   {
+    "name": "rot_119",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_120",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.053591514901676,
+    "calls": 1
+   },
+   {
+    "name": "rot_121",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_122",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.218384322993597,
+    "calls": 1
+   },
+   {
+    "name": "rot_123",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_124",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6083043997074302,
+    "calls": 1
+   },
+   {
+    "name": "rot_125",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_126",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.936546134809646,
+    "calls": 1
+   },
+   {
+    "name": "rot_127",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_128",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.747425670478506,
+    "calls": 1
+   },
+   {
+    "name": "rot_129",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1086244689504383e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_130",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.037767251587834,
+    "calls": 1
+   },
+   {
+    "name": "rot_131",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_132",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.746704179080439,
+    "calls": 1
+   },
+   {
+    "name": "rot_133",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1086244689504383e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_134",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.8865521831904912,
+    "calls": 1
+   },
+   {
+    "name": "rot_135",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.7763568394002505e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_136",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.166430885150847,
+    "calls": 1
+   },
+   {
+    "name": "rot_137",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.552713678800501e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_138",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.752959009317436,
+    "calls": 1
+   },
+   {
+    "name": "rot_139",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": -0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_140",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.0988237819415385,
+    "calls": 1
+   },
+   {
+    "name": "rot_141",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.552713678800501e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_142",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 1.6104906777051813,
+    "calls": 1
+   },
+   {
+    "name": "rot_143",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.5543122344752192e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_144",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.076990813641945,
+    "calls": 1
+   },
+   {
+    "name": "rot_145",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_146",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.747767973086554,
+    "calls": 1
+   },
+   {
+    "name": "rot_147",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_148",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.8333799334716163,
+    "calls": 1
+   },
+   {
+    "name": "rot_149",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_150",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.076531589360554,
+    "calls": 1
+   },
+   {
+    "name": "rot_151",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 1.3322676295501878e-15,
+    "calls": 1
+   },
+   {
+    "name": "rot_152",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 4.746981276363286,
+    "calls": 1
+   },
+   {
+    "name": "rot_153",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_154",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.8667463445858896,
+    "calls": 1
+   },
+   {
+    "name": "rot_155",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 8.881784197001252e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_156",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 5.906716874232565,
+    "calls": 1
+   },
+   {
+    "name": "rot_157",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_158",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 2.9304170430045486,
+    "calls": 1
+   },
+   {
+    "name": "rot_159",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_160",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 6.221279972142266,
+    "calls": 1
+   },
+   {
+    "name": "rot_161",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "rot_162",
+    "qubits": 15,
+    "cx": 2,
+    "u": 6,
+    "global_phase": 3.1440197032645107,
+    "calls": 1
+   },
+   {
+    "name": "rot_163",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 4.440892098500626e-16,
+    "calls": 1
+   },
+   {
+    "name": "rot_164",
+    "qubits": 15,
+    "cx": 1,
+    "u": 4,
+    "global_phase": 3.1415926535898224,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "C": [
+    -0.7640580957844082,
+    -0.34074333300121024
+   ],
+   "dev_vs_build": 6.695778807883559e-12,
+   "dev_vs_polynomial": null
+  },
+  "readout_text": "C = 2 conj(A0) A1, A0 = amp[7], A1 = amp[7 + 2^14]; <HF|exp(-i H T)|HF> ~ exp(-i c T) C",
+  "readout": {
+   "type": "hadamard",
+   "ref": 7,
+   "test": 14,
+   "reference": {
+    "file": "data/he4_L3_sym/gqsp_overlaps.json",
+    "path": [
+     "values",
+     "T0.3",
+     "M_build"
+    ]
+   }
+  },
+  "paper_cx_approx": 1070000.0
+ }
+]

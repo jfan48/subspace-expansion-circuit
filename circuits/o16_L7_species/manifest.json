@@ -1,0 +1,317 @@
+[
+ {
+  "description": "controlled projected pair piece, sections pre + mid + post (the object the build simulated)",
+  "family": "species pair piece (sections)",
+  "tau": 0.02824497964528043,
+  "pair": [
+   0,
+   1
+  ],
+  "other_registers": [
+   2,
+   3
+  ],
+  "layout": {
+   "reg": [
+    [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    [
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ]
+   ],
+   "ctrl": 24,
+   "zs": 25,
+   "zt": 26,
+   "zu": 27,
+   "zv": 28,
+   "cond": 29,
+   "nq": 30
+  },
+  "build_cx": 61604,
+  "paper": "Table VII  pair piece row (16O species column): 61 604",
+  "verification_mode": "verified by the build in sections (a 30-qubit statevector is 16 GB): pre and post on all 64 x 64 codes of registers 2, 3 with a random state on the borrowed qubits 0-3; mid (reads registers 2, 3 only through bit 5, qubits 17 and 23) remapped to 20 qubits, per class of (u, v) basis states against exp(-i tau Pi_n A Pi_n) (n = 0: 205, n = 1: 25, n = 2: 1 state), two representatives per class; with registers 2, 3 in a basis state the state factorizes between the sections",
+  "global_phase_matters": "only for a direct comparison of amplitudes with the operator (the build's section checks restore each section's phase); not inside a Hadamard test",
+  "reference": "data/o16_L7_species/pair_piece.json",
+  "source": "o16/build/b2_pair_piece.py, results_b2_01.json",
+  "file": "circuits/o16_L7_species/pair_piece_01_sections.qasm.gz",
+  "format": "sequence: each transpiled piece defined once as an OpenQASM 2 gate, circuit = calls",
+  "qubits": 30,
+  "cx": 61604,
+  "u": 97837,
+  "depth": 121266,
+  "bytes": 1864056,
+  "bytes_uncompressed": 5445984,
+  "pieces": [
+   {
+    "name": "pre",
+    "qubits": 30,
+    "cx": 84,
+    "u": 118,
+    "global_phase": 0.0,
+    "calls": 1
+   },
+   {
+    "name": "mid",
+    "qubits": 30,
+    "cx": 61436,
+    "u": 97601,
+    "global_phase": 0.20594167158233706,
+    "calls": 1
+   },
+   {
+    "name": "post",
+    "qubits": 30,
+    "cx": 84,
+    "u": 118,
+    "global_phase": 0.0,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "flag_sections_max_dev": 1.942890293094024e-15,
+   "mid_class_checks_max_dev": 2.311717885873471e-11,
+   "class_checks": [
+    {
+     "cls": "n = 0: u, v HF",
+     "u_code": 0,
+     "v_code": 0,
+     "n_states": 205,
+     "dev": 3.326137294139745e-12,
+     "weight_outside": 7.97695243193175e-14
+    },
+    {
+     "cls": "n = 1: u single",
+     "u_code": 13,
+     "v_code": 0,
+     "n_states": 25,
+     "dev": 7.560330724589255e-12,
+     "weight_outside": 7.860379014346108e-14
+    },
+    {
+     "cls": "n = 1: u single",
+     "u_code": 6,
+     "v_code": 0,
+     "n_states": 25,
+     "dev": 6.88768424317745e-12,
+     "weight_outside": 8.126832540256146e-14
+    },
+    {
+     "cls": "n = 1: v single",
+     "u_code": 0,
+     "v_code": 9,
+     "n_states": 25,
+     "dev": 7.30888670808377e-12,
+     "weight_outside": 8.060219158778636e-14
+    },
+    {
+     "cls": "n = 1: v single",
+     "u_code": 0,
+     "v_code": 3,
+     "n_states": 25,
+     "dev": 6.414429772920642e-12,
+     "weight_outside": 7.649436639667329e-14
+    },
+    {
+     "cls": "n = 2: u, v singles",
+     "u_code": 15,
+     "v_code": 11,
+     "n_states": 1,
+     "dev": 1.9947346034308533e-11,
+     "weight_outside": 8.126832540256146e-14
+    },
+    {
+     "cls": "n = 2: u, v singles",
+     "u_code": 1,
+     "v_code": 13,
+     "n_states": 1,
+     "dev": 2.311717885873471e-11,
+     "weight_outside": 8.258411315908987e-14
+    },
+    {
+     "cls": "n = 2: u rank 2",
+     "u_code": 52,
+     "v_code": 0,
+     "n_states": 1,
+     "dev": 2.1972184551554426e-11,
+     "weight_outside": 8.203160373199125e-14
+    },
+    {
+     "cls": "n = 2: u rank 2",
+     "u_code": 37,
+     "v_code": 0,
+     "n_states": 1,
+     "dev": 2.1460145061917172e-11,
+     "weight_outside": 8.193445921733655e-14
+    },
+    {
+     "cls": "n = 2: v rank 2",
+     "u_code": 0,
+     "v_code": 49,
+     "n_states": 1,
+     "dev": 2.2898851149158638e-11,
+     "weight_outside": 8.17887424453545e-14
+    },
+    {
+     "cls": "n = 2: v rank 2",
+     "u_code": 0,
+     "v_code": 34,
+     "n_states": 1,
+     "dev": 1.7554871187688413e-11,
+     "weight_outside": 8.165690346118026e-14
+    }
+   ],
+   "note": "build section checks rerun on the reloaded gate definitions pre, mid, post (2 representative(s) per class)"
+  },
+  "readout": {
+   "type": "pair_piece_sections",
+   "phases": {
+    "pre": 0.0,
+    "mid": 0.20594167158233706,
+    "post": 0.0
+   },
+   "register_u": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ],
+   "register_v": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+   ],
+   "flag_qubits": [
+    27,
+    28
+   ],
+   "reference": {
+    "file": "data/o16_L7_species/pair_piece_refs.json"
+   },
+   "note": "flag sections pre / post: on the qubits they touch (registers 2, 3, z_u, z_v, borrowed idle qubits), every (u, v) code with a random borrowed state: output = input with z_u, z_v XORed by [u != 0], [v != 0]; mid: see the reference file"
+  },
+  "paper_cx": 61604
+ },
+ {
+  "description": "controlled projected pair piece, whole-circuit transpile (counted, not simulated)",
+  "family": "species pair piece (whole transpile)",
+  "tau": 0.02824497964528043,
+  "pair": [
+   0,
+   1
+  ],
+  "other_registers": [
+   2,
+   3
+  ],
+  "layout": {
+   "reg": [
+    [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    [
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ]
+   ],
+   "ctrl": 24,
+   "zs": 25,
+   "zt": 26,
+   "zu": 27,
+   "zv": 28,
+   "cond": 29,
+   "nq": 30
+  },
+  "build_cx": 61604,
+  "paper": "Table VII  pair piece row (16O species column): 61 604",
+  "verification_mode": "verified by the build in sections (a 30-qubit statevector is 16 GB): pre and post on all 64 x 64 codes of registers 2, 3 with a random state on the borrowed qubits 0-3; mid (reads registers 2, 3 only through bit 5, qubits 17 and 23) remapped to 20 qubits, per class of (u, v) basis states against exp(-i tau Pi_n A Pi_n) (n = 0: 205, n = 1: 25, n = 2: 1 state), two representatives per class; with registers 2, 3 in a basis state the state factorizes between the sections",
+  "global_phase_matters": "only for a direct comparison of amplitudes with the operator (the build's section checks restore each section's phase); not inside a Hadamard test",
+  "reference": "data/o16_L7_species/pair_piece.json",
+  "source": "o16/build/b2_pair_piece.py, results_b2_01.json",
+  "file": "circuits/o16_L7_species/pair_piece_01_whole_transpile.qasm.gz",
+  "format": "flat: one transpiled circuit (qasm2.dumps)",
+  "qubits": 30,
+  "cx": 61604,
+  "u": 97811,
+  "depth": 121250,
+  "bytes": 1871842,
+  "bytes_uncompressed": 5567483,
+  "pieces": [
+   {
+    "name": "(whole file)",
+    "qubits": 30,
+    "cx": 61604,
+    "u": 97811,
+    "global_phase": 0.20594167158233662,
+    "calls": 1
+   }
+  ],
+  "verification": {
+   "cx_ok": true,
+   "simulated": false,
+   "note": "CNOT count only; the whole 35/30-qubit circuit was not simulated (neither by the build)"
+  },
+  "readout": {
+   "type": "none",
+   "reason": "30-qubit circuit, beyond statevector simulation; the same circuit in sections is pair_piece_01_sections"
+  },
+  "paper_cx": 61604
+ }
+]

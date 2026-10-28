@@ -1,0 +1,4 @@
+# versions with which the circuits were exported and checked (Python 3.12.13, macOS, Apple silicon)
+qiskit==2.3.1
+qiskit-aer==0.17.2
+numpy==2.4.4
