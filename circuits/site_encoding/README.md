@@ -1,11 +1,11 @@
 # Site encoding (Jordan-Wigner): deuteron and triton on the L = 2 lattice
 
-Hand-built circuits of the site encoding: the gate units, the controlled product-formula steps and the deuteron's
-controlled walk of Table XI, and the Hadamard tests of the fourth-order step behind Figs. 13 and 14. No transpiler
-was used: every gate was written by `trotter_circuits.py` (steps, units) and
-`qubitized_walk.py` (walk), scripts not part of this release. `manifest.json` lists every file with its qubit and CNOT counts, the
-paper's count where Table XI prints one, and a machine-readable `readout`; reference values are in
-`data/site_encoding/`.
+Hand-built circuits of the site encoding: the gate units and the controlled product-formula steps of Table X, the
+deuteron's controlled walk of Table XI, and the Hadamard tests of the fourth-order step behind Fig. 7 (a) (deuteron)
+and Fig. 7 (b) (triton). No transpiler was used: every gate was written by `trotter_circuits.py` (steps, units)
+and `qubitized_walk.py` (walk), scripts not part of this release. `manifest.json` lists every file with its qubit
+and CNOT counts, the paper's count where Table X or XI prints one, and a machine-readable `readout`; reference
+values are in `data/site_encoding/`.
 
 ## Gate set and loading
 
@@ -28,12 +28,14 @@ Hadamard tests define the controlled step once as the gate `cs4_step` and call i
   Hartree-Fock state.
 - Hamiltonian (convention A of the paper, doubled L = 2 hops), per orbital:
   H_kin = sum_q 6 kappa n_q - kappa sum_<ij> (X_i Zbar X_j + Y_i Zbar Y_j). Interaction:
-  H_I = V2 sum_sites sum_{o<o'} n_o n_o', plus V3 n_1 n_2 n_3 for the triton. Constants: kappa = 5.18, V2 = -14.25,
-  V3 = -17.04 MeV.
+  H_I = V2 sum_sites sum_{o<o'} n_o n_o', plus V3 n_1 n_2 n_3 for the triton. Constants: kappa = 5.18, V2 = -48.35,
+  V3 = +64.24 MeV. The couplings are fitted to the deuteron binding energy in infinite volume and to the triton
+  binding energy on a 16^3 lattice and held fixed, so that on this L = 2 lattice the ground-state energies are
+  -13.737 MeV (deuteron) and -29.737 MeV (triton).
 
 ## Files
 
-| files | content | qubits | CNOT (Table XI) |
+| files | content | qubits | CNOT (Table X; walk: Table XI) |
 |---|---|---|---|
 | `unit_hop_s{0,1,3}` | controlled hop C_a-exp(+i theta (X_i Zbar X_j + Y_i Zbar Y_j)), i = 0, j = s + 1, string qubits 1..s, control a = s + 2, theta = kappa x 0.01 | s + 3 | 5 / 7 / 11 |
 | `unit_site_diagonal_{2,3}orb` | controlled phase polynomial of one site, exp(-i dt sum_S c_S Z_S) (identity term excluded), site qubits 0..n-1, control n, dt = 0.01 | 3 / 4 | 6 / 14 |
@@ -41,11 +43,12 @@ Hadamard tests define the controlled step once as the gate `cs4_step` and call i
 | `triton_C{S1,S2,S4}_dt0.01_n1` | the same for the triton | 25 | 370 / 628 / 2 108 |
 | `{deuteron,triton}_CS2_dt0.01_n3_merged` | three consecutive S2 steps, adjacent hopping half-layers merged | 17 / 25 | 832 / 1 368 |
 | `deuteron_controlled_walk` | controlled qubitized walk of the 72-Pauli-string LCU: control 0, selection register 1-7, scratch 8-14, system 15-30 (system qubit q on 15 + q) | 31 | 549 |
-| `hadamard_deuteron_S4/deuteron_S4_dt0.01_n01..n50` | Hadamard test of n controlled S4 steps (one merged n-step circuit per file), Fig. 13 | 17 | 1 272 + 1 100 (n - 1) |
-| `hadamard_triton_S4/triton_S4_dt0.01_n01..n70` | Hadamard test of n controlled S4 steps: `cs4_step` called n times, as simulated; Fig. 14 | 25 | 2 108 n |
+| `hadamard_deuteron_S4/deuteron_S4_dt0.01_n01..n80` | Hadamard test of n controlled S4 steps (one merged n-step circuit per file), Fig. 7 (a) | 17 | 1 272 + 1 100 (n - 1) |
+| `hadamard_triton_S4/triton_S4_dt0.01_n001..n100` | Hadamard test of n controlled S4 steps: `cs4_step` called n times, as simulated; Fig. 7 (b) | 25 | 2 108 n |
 
 The step files hold the controlled step only. The Hadamard-test files also contain the preparation: `x` on the
-reference qubits, `h` on the ancilla.
+reference qubits, `h` on the ancilla. The deuteron files are numbered with two digits (n01..n80), the triton files
+with three (n001..n100), so that both sort by n. Files above 1 MB are gzipped (`*.qasm.gz`).
 
 ## Readout
 
@@ -56,8 +59,9 @@ the ancilla gives Re C = P(0, ref) - P(1, ref), and `sdg` then `h` gives Im C.
 Reference values:
 - `data/site_encoding/deuteron_S4_dt0.01_overlaps.json` and `triton_S4_dt0.01_overlaps.json`: the overlaps of the
   paper's runs (results_simulation.json).
-- `data/site_encoding/table_xi_steps.json`: the ideal overlaps <ref|U^n|ref> of the S1, S2 and S4 steps, computed in
-  the fixed-particle-number sector independently of the circuits.
+- `data/site_encoding/table_xi_steps.json` (file name kept from an earlier table numbering): the ideal overlaps
+  <ref|U^n|ref> of the S1, S2 and S4 step files of Table X, computed in the fixed-particle-number sector
+  independently of the circuits.
 
 For the step files the runner prepends the preparation (`readout.prep`). The gate units are compared as operators
 with the exact controlled exponentials built from the parameters in their `readout`. The 31-qubit walk is counted

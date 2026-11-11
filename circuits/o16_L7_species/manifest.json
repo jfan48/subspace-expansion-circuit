@@ -55,7 +55,7 @@
    "nq": 30
   },
   "build_cx": 61604,
-  "paper": "Table VII  pair piece row (16O species column): 61 604",
+  "paper": "Table VI  pair piece row (16O species column): 61 604",
   "verification_mode": "verified by the build in sections (a 30-qubit statevector is 16 GB): pre and post on all 64 x 64 codes of registers 2, 3 with a random state on the borrowed qubits 0-3; mid (reads registers 2, 3 only through bit 5, qubits 17 and 23) remapped to 20 qubits, per class of (u, v) basis states against exp(-i tau Pi_n A Pi_n) (n = 0: 205, n = 1: 25, n = 2: 1 state), two representatives per class; with registers 2, 3 in a basis state the state factorizes between the sections",
   "global_phase_matters": "only for a direct comparison of amplitudes with the operator (the build's section checks restore each section's phase); not inside a Hadamard test",
   "reference": "data/o16_L7_species/pair_piece.json",
@@ -280,7 +280,7 @@
    "nq": 30
   },
   "build_cx": 61604,
-  "paper": "Table VII  pair piece row (16O species column): 61 604",
+  "paper": "Table VI  pair piece row (16O species column): 61 604",
   "verification_mode": "verified by the build in sections (a 30-qubit statevector is 16 GB): pre and post on all 64 x 64 codes of registers 2, 3 with a random state on the borrowed qubits 0-3; mid (reads registers 2, 3 only through bit 5, qubits 17 and 23) remapped to 20 qubits, per class of (u, v) basis states against exp(-i tau Pi_n A Pi_n) (n = 0: 205, n = 1: 25, n = 2: 1 state), two representatives per class; with registers 2, 3 in a basis state the state factorizes between the sections",
   "global_phase_matters": "only for a direct comparison of amplitudes with the operator (the build's section checks restore each section's phase); not inside a Hadamard test",
   "reference": "data/o16_L7_species/pair_piece.json",

@@ -12,10 +12,10 @@ values each circuit reproduces and a script that reruns them. Table and figure n
 
 | folder | system and encoding | qubits | circuits | paper |
 |---|---|---|---|---|
-| `circuits/site_encoding` | deuteron and triton on the L = 2 lattice, second quantization, one qubit per site and spin-isospin state (Jordan-Wigner) | 17, 25 (walk 31) | gate units; controlled first-, second- and fourth-order product-formula steps; controlled walk of the deuteron; Hadamard tests of the fourth-order step at dt = 0.01 MeV^-1 for n <= 50 (deuteron) and n <= 70 (triton) steps | Table XI; Figs. 13, 14, Table VI |
-| `circuits/he4_L3_sym` | 4He at L = 3, first-quantized register of the 157 states of total momentum zero (9 system qubits) | 12-15 | controlled second- and fourth-order steps and their Hadamard tests; walk, block encoding, controlled walk; chain of walks for the Chebyshev moments of orders 0-41; Hadamard tests of qubitized evolution (GQSP) for n = 1-14 time steps and for T = 0.05, 0.3 MeV^-1 | Table VII; Fig. 15 (a), Table VIII |
-| `circuits/o16_L7_sym` | 16O at L = 7, first-quantized register of the 109 states symmetric under permutations of the spin-isospin states (7 system qubits) | 8-10 | controlled evolution in the exact eigenbasis and its Hadamard tests; walk, block encoding, controlled walk; chain of walks for the Chebyshev moments of orders 0-81; GQSP Hadamard tests for n = 1-37 and T = 0.05, 0.3 MeV^-1 | Table VII; Fig. 15 (b), Table VIII |
-| `circuits/he4_L3_species`, `circuits/o16_L7_species` | species registers of the same nuclei (24 system qubits) | 35, 30 | the controlled projected pair piece, in three sections and as one transpiled circuit | Table VII |
+| `circuits/site_encoding` | deuteron and triton on the L = 2 lattice, second quantization, one qubit per site and spin-isospin state (Jordan-Wigner) | 17, 25 (walk 31) | gate units; controlled first-, second- and fourth-order product-formula steps; controlled walk of the deuteron; Hadamard tests of the fourth-order step at dt = 0.01 MeV^-1 for n <= 80 (deuteron) and n <= 100 (triton) steps | Tables X, XI; Fig. 7, Table IV |
+| `circuits/he4_L3_sym` | 4He at L = 3, first-quantized register of the 157 states of total momentum zero (9 system qubits) | 12-15 | controlled second- and fourth-order steps and their Hadamard tests; walk, block encoding, controlled walk; chain of walks for the Chebyshev moments of orders 0-41; Hadamard tests of qubitized evolution (GQSP) for n = 1-14 time steps and for T = 0.05, 0.3 MeV^-1 | Table VI; Fig. 12 (a), Table VII |
+| `circuits/o16_L7_sym` | 16O at L = 7, first-quantized register of the 109 states symmetric under permutations of the spin-isospin states (7 system qubits) | 8-10 | controlled evolution in the exact eigenbasis and its Hadamard tests; walk, block encoding, controlled walk; chain of walks for the Chebyshev moments of orders 0-81; GQSP Hadamard tests for n = 1-37 and T = 0.05, 0.3 MeV^-1 | Table VI; Fig. 12 (b), Table VII |
+| `circuits/he4_L3_species`, `circuits/o16_L7_species` | species registers of the same nuclei (24 system qubits) | 35, 30 | the controlled projected pair piece, in three sections and as one transpiled circuit | Table VI |
 
 Each folder has a `README.md` (qubit roles, reference state, time steps, readout) and a `manifest.json` with one
 entry per file: description, qubit and CNOT counts, the count the paper prints, the global phase of each piece, and
@@ -55,7 +55,7 @@ states of a chain of walks as described in the folder READMEs.
 
 ```
 pip install -r requirements.txt
-python3 simulate/check_all.py --full --cx-only   # CNOT counts of all 221 files against the manifests and the paper (~15 s)
+python3 simulate/check_all.py --full --cx-only   # CNOT counts of all 281 files against the manifests and the paper (~15 s)
 python3 simulate/check_all.py --quick            # counts plus statevector simulation of a subset (~4 min on a laptop)
 python3 simulate/check_all.py --full             # simulation of every file that fits in a statevector
 python3 simulate/reproduce.py circuits/o16_L7_sym/gqsp_hadamard_n05.qasm.gz

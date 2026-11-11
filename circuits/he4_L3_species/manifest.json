@@ -62,7 +62,7 @@
    "nq": 35
   },
   "build_cx": 5436,
-  "paper": "Table VII  pair piece row (4He species column): 5 436",
+  "paper": "Table VI  pair piece row (4He species column): 5 436",
   "verification_mode": "verified by the build in sections (the 35-qubit statevector is out of reach): pre and post on all 64 x 64 codes of registers 2, 3 with a random state on the borrowed qubits 0-3; mid (touches no qubit of registers 2, 3) remapped to 23 qubits, per class none / one / both of registers 2, 3 excited against exp(-i tau Pi_n A Pi_n); with registers 2, 3 in a basis state the state factorizes between the sections",
   "global_phase_matters": "only for a direct comparison of amplitudes with the operator (the build's section checks restore each section's phase); not inside a Hadamard test",
   "reference": "data/he4_L3_species/pair_piece.json",
@@ -238,7 +238,7 @@
    "nq": 35
   },
   "build_cx": 5436,
-  "paper": "Table VII  pair piece row (4He species column): 5 436",
+  "paper": "Table VI  pair piece row (4He species column): 5 436",
   "verification_mode": "verified by the build in sections (the 35-qubit statevector is out of reach): pre and post on all 64 x 64 codes of registers 2, 3 with a random state on the borrowed qubits 0-3; mid (touches no qubit of registers 2, 3) remapped to 23 qubits, per class none / one / both of registers 2, 3 excited against exp(-i tau Pi_n A Pi_n); with registers 2, 3 in a basis state the state factorizes between the sections",
   "global_phase_matters": "only for a direct comparison of amplitudes with the operator (the build's section checks restore each section's phase); not inside a Hadamard test",
   "reference": "data/he4_L3_species/pair_piece.json",

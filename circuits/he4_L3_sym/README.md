@@ -3,7 +3,7 @@
 "The build" means the scripts that constructed and verified these circuits for the paper; they are not part of this release.
 
 Gate-level circuits of the 9-qubit register of the 157 states of total momentum zero in the two-excitation space
-(the "symmetric 4He" column of Table VII). Every file is the transpiled circuit the build simulated
+(the "symmetric 4He" column of Table VI). Every file is the transpiled circuit the build simulated
 ({u, cx}, Qiskit 2.3.1, `transpile(..., basis_gates=["u", "cx"], optimization_level=1, qubits_initially_zero=False)`),
 written with `qiskit.qasm2.dumps`. Files above 1 MB are gzipped (`*.qasm.gz`). `manifest.json` lists every file with
 its qubit count, CNOT and `u` counts, depth, the build's and the paper's count, dt / T / n, the global phase of each
@@ -58,7 +58,7 @@ these `x` gates inside the transpiled circuit; the chain and GQSP files apply th
 
 - Time steps. Steps and S2 Hadamard tests: dt = 0.0075 MeV^-1 (a1/a2 of the build: the step bound
   0.99 pi/(E_max - E0) = 0.0074984 rounded) and dt/2 = 0.00375. GQSP: dt = 0.99 pi/(E_max - E0) = 0.00749837 MeV^-1,
-  T = n dt, n = 1..14, plus T = 0.05 and 0.3 (Table VII). E0 = -145.06733, E_max = 269.71307,
+  T = n dt, n = 1..14, plus T = 0.05 and 0.3 (Table VI). E0 = -145.06733, E_max = 269.71307,
   alpha = 229.77885, c = 55.46992 MeV.
 - C(n) = 2 conj(A0) A1 from the amplitudes of |0>|ref> and |1>|ref> before any final gate (on hardware: final H on
   the test qubit gives Re C = P(0, HF) - P(1, HF); S^dag then H gives Im C). The global phases cancel in C. The GQSP

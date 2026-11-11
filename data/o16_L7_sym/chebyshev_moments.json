@@ -1,5 +1,5 @@
 {
- "note": "mu_n = <HF|T_n((H_s - c)/alpha)|HF>, n = 0..81: moments_walk from the gate-level walk chain (a2_sym_tests.py (ii)), moments_exact from the matrix; these 82 moments feed Fig. 15 (b) (floor_costs.py, fig_regfloor.py)",
+ "note": "mu_n = <HF|T_n((H_s - c)/alpha)|HF>, n = 0..81: moments_walk from the gate-level walk chain (a2_sym_tests.py (ii)), moments_exact from the matrix; these 82 moments feed Fig. 12 (b) (floor_costs.py, fig_regfloor.py)",
  "alpha": 51.402281695374064,
  "c": -37.53386875023016,
  "E0": -88.93615044560423,

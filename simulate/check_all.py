@@ -31,13 +31,13 @@ def plan(folder, e, level):
     if ro["type"] == "none":
         return "not simulable: " + ro["reason"]
     if e.get("system") == "triton" and e["family"].startswith("Hadamard") and e["n"] > (2 if level == "quick" else 3):
-        return ("triton n > 3: 25 qubits, n controlled S4 steps per file (about 30 min for the 70 files); the files "
+        return ("triton n > 3: 25 qubits, n controlled S4 steps per file (about 50 min for the 100 files); the files "
                 "are the same step definition called n times, n <= 3 checked" if level == "full" else "quick subset")
     if level == "full":
         return None
     s = stem(e)
-    if e["family"] == "Table XI step" and e["qubits"] > 20:
-        return "quick subset (25-qubit Table XI step files run in --full)"
+    if e["family"] == "Table X step" and e["qubits"] > 20:
+        return "quick subset (25-qubit Table X step files run in --full)"
     if e.get("system") == "deuteron" and e["family"].startswith("Hadamard"):
         return None if e["n"] <= 3 else "quick subset"
     if s.startswith("gqsp_hadamard"):

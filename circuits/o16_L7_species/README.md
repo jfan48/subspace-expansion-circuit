@@ -2,7 +2,7 @@
 
 "The build" means the scripts that constructed and verified these circuits for the paper; they are not part of this release.
 
-The full-size controlled projected pair piece of the species register (Table VII, "pair piece" row, 16O species
+The full-size controlled projected pair piece of the species register (Table VI, "pair piece" row, 16O species
 column: 61 604 CNOT): controlled exp(-i tau P A^(01) P) on registers 0, 1, with registers 2, 3 as spectators,
 tau = 0.99 pi/(21.17817 + 88.93615) = 0.0282449 MeV^-1 (step bound of the two-excitation space); A = A2' +
 (O' x 1 + 1 x O')/3, the folded pair operator; P projects on the two-excitation space, and the parts n = 0 (205
@@ -14,7 +14,7 @@ the other two registers have total rank 0, 1, 2. Transpiled with Qiskit 2.3.1 ({
 | file | content | CNOT |
 |---|---|---|
 | `pair_piece_01_sections.qasm.gz` | gates `pre` (compute z_u, z_v), `mid` (parts n = 0, 2, 1, own flags, condition flags), `post` (uncompute z_u, z_v), each transpiled separately in the 30-qubit register; the circuit is pre, mid, post | 84 + 61 436 + 84 = 61 604 |
-| `pair_piece_01_whole_transpile.qasm.gz` | the same circuit pre + mid + post transpiled in one call; the count printed in Table VII | 61 604 |
+| `pair_piece_01_whole_transpile.qasm.gz` | the same circuit pre + mid + post transpiled in one call; the count printed in Table VI | 61 604 |
 
 ## Verification: in sections, not as a whole statevector
 

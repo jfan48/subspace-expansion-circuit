@@ -3,7 +3,7 @@
 "The build" means the scripts that constructed and verified these circuits for the paper; they are not part of this release.
 
 Gate-level circuits of the 7-qubit register of the 109 states of the two-excitation space that are symmetric under
-permutations of the four spin-isospin species (the "symmetric 16O" column of Table VII). Every file is the
+permutations of the four spin-isospin species (the "symmetric 16O" column of Table VI). Every file is the
 transpiled circuit the build simulated ({u, cx}, Qiskit 2.3.1, `transpile(..., basis_gates=["u", "cx"],
 optimization_level=1, qubits_initially_zero=False)`), written with `qiskit.qasm2.dumps`. Files above 1 MB are
 gzipped (`*.qasm.gz`). `manifest.json` lists every file with its qubit count, CNOT and `u` counts, depth, the build's
@@ -51,7 +51,7 @@ Reference state HF = code 0: the all-zero basis state, no preparation.
 
 - Time step: dt = 0.99 pi/(E_max - E0) = 0.0302532944 MeV^-1 with the spectral range of this register,
   E0 = -88.93615, E_max = 13.86841 MeV (the build's a1, a2 and `run_qkrylov.py`); GQSP at T = n dt, n = 1..37, plus
-  T = 0.05 and 0.3 (Table VII). alpha = 51.40228, c = -37.53387 MeV.
+  T = 0.05 and 0.3 (Table VI). alpha = 51.40228, c = -37.53387 MeV.
 - C(n) = 2 conj(A0) A1 from the amplitudes of |0>|ref> and |1>|ref> before any final gate (on hardware: final H on
   the test qubit gives Re C = P(0, HF) - P(1, HF); S^dag then H gives Im C). Global phases cancel in C. The GQSP value
   approximates <HF|e^{-i(H_s - c)T}|HF>, so <HF|e^{-iH_s T}|HF> ~ exp(-i c T) C.
@@ -66,7 +66,7 @@ Reference state HF = code 0: the all-zero basis state, no preparation.
 ## Provenance (build scripts, not part of this release)
 
 `a1_sym_circuits.py` (controlled evolution, walk, U_H, controlled walk), `a2_sym_tests.py` (Hadamard tests,
-walk chain; the 82 moments of `results_a2.json` feed Fig. 15 (b)), `a3_sym_gqsp.py` (GQSP at T = 0.05, 0.3; T = 0.3
+walk chain; the 82 moments of `results_a2.json` feed Fig. 12 (b)), `a3_sym_gqsp.py` (GQSP at T = 0.05, 0.3; T = 0.3
 is written here piecewise, as `run_qkrylov.py` builds it, with the same CNOT count 715 080 as the build's
 whole-circuit transpile), `run_qkrylov.py` (GQSP n = 1..37 and T = 0.05). Every file was reloaded, unrolled and
 simulated (Aer statevector); the CNOT counts equal the build's and the values agree with the build's
